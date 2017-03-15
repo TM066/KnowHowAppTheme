@@ -1,0 +1,475 @@
+/* =======================================================================================================================================================================
+   Imports
+   ===================================================================================================================================================================== */
+
+@import 'base/_config'; 
+
+/* ================================[ Common ]====================================*/    
+body {
+  background: #E3E4E5 none repeat scroll 0 0;
+}
+.page {
+  background: #E3E4E5 none repeat scroll 0 0;
+}
+* {
+  /* Prevent any object from being highlighted upon touch event*/
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+.row.wider {
+  max-width: 100% !important; 
+  width: 100% !important;
+}
+#content {
+  height: auto;
+  margin-bottom: 6em;
+}
+.views-field.views-field-field-image img {
+  width: 100%;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+.inline-list.createIcons {
+    padding-left: 11%;
+    padding-right: 11%;
+    padding-top: 3em;
+}
+.artIcon img.comments {
+  height: 72px;
+}
+/* ====================================================================================*/
+
+/* ================================[ Masonry Card Page Elements ]====================================*/    
+
+.image {
+  padding: 0;
+} 
+.views-field.views-field-body {
+  border-bottom: 1px solid #ccc; 
+  margin: 0 10px 12px 5px;
+  padding: 1.2em 0; 
+}
+.views-field.views-field-view-node {
+  padding: 0.6em 0 0.6em 0.6em;
+}
+.views-field.views-field-field-skills {
+  padding: 0.6em 0 0.6em 0.6em;
+}
+
+.field.field-name-cardurl {
+  margin-bottom: 1em;
+  padding: 0.6em 0 1em 0.6em;
+}
+.cardURL > h3 {
+    font-size: 1.1em!important;
+    font-weight: bold!important;
+    font-size: 1.1em!important;
+    padding: 0 0 0 0.5em!important;
+
+}
+views-field.views-field-field-userfirstname {
+  padding: 1.2em 0.6em 0 0;
+  font-weight:bolder;
+}
+views-field.views-field-field-lastfirstname {
+  padding: 1.2em 0.6em 0 0;
+  font-weight:bolder;
+}
+.view-teams-teammembers .field-content > img {
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  height: 9em;
+  object-fit: cover;
+  width: 100%;   
+
+}
+.cards .views-field.views-field-field-userprofileimg {
+  margin-top: 19px;
+}
+.views-field.views-field-field-userprofileimg img {
+  border: 5px solid #fff;
+  border-radius: 100%;
+  height: 7em;
+  margin: 4em 0 1em 38%;
+  object-fit: cover;
+  width: 7em;
+}
+.views-field-field-userfirstname .firstname {
+  float: left;
+  margin-right: 4px;
+}
+.views-field.views-field-field-userfirstname {
+  font-weight: bold;
+}
+.cards .views-field.views-field-field-userprofileimg img {
+  border: 5px solid #fff;
+  border-radius: 100%;
+  height: 6em;
+  margin: 0em 0 1em 0em;
+  object-fit: cover;
+  width: 6em;
+}
+.views-field.views-field-body p {
+    margin-bottom: 0;
+}
+.views-field.views-field-field-userbanner{
+  height: 2em;
+  object-fit: cover;
+  }
+
+.usernamerole {
+  margin-top: 2.5em;
+}
+.views-field.views-field-counter {
+  padding: 0.8em 0;
+}
+views-field.views-field-created {
+  padding: 0.8em 0.8em 0 0;
+}
+.views-field.views-field-created {
+  padding: 0.8em 0;
+} 
+.views-field.views-field_job_title {
+  padding: 0.1em 0.6em 0;
+}
+.views-field.views-field-love {
+  padding: 0.8em;
+}
+.field-name-love .field-content {
+  float: right;
+  font-weight: 500;
+}
+
+.small-4.medium-4.large-4.columns.love {
+  padding: 0 0 0 0.6em;
+}
+
+.field.field-name-field-teambanner {
+  background: #fff none repeat scroll 0 0;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+  margin: 1em 0.5em;
+}
+.tags {
+    margin-top: -1em;
+}
+.skilltags {
+    padding: 10px;
+    background: #fff;
+    padding-left: 20px;
+    padding-top: 18px;
+}
+.contacts {
+  background: #fff none repeat scroll 0 0;
+  font-size: 0.8em;
+  margin-top: 1.8em;
+  padding: 20px 10px 0;
+}
+.contacts .field .field-label {
+  display: none;
+}
+.contactsList {
+  margin-left: 0;
+}
+.contactsList .field-items {
+  padding-left: 4px;
+}
+.contactsList > li {
+  display: flex;
+}
+.contactsList img {
+  width: 1.6em;
+   height: 1.6em;
+}
+.field.field-name-title.team {
+    color: #333;
+    font-size: 2em;
+    font-weight: bold;
+    line-height: 1em;
+    padding: 0.6em 0.4em 0.6em 0.4em;
+    background: #fff;
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+    text-align: center;
+    margin: 0 0.26em;
+    margin-top: -0.5em;
+    margin-bottom: -1em;
+}
+/* ====================================================================================*/
+
+/* =============================[subteams view]=======================================*/
+
+/* subteams view*/
+.view-teams-subteams .masonry-item {
+  width: 32.4% !important;
+  height: 15em;
+  margin-bottom: 1em;
+  padding-bottom: 1em;
+  opacity:0.86;
+  border-radius: 15px;
+}
+.view-teams-subteams .masonry-item:hover {
+  opacity:1;
+}
+.view-teams-subteams .views-field.views-field-title {
+  color: #333;
+  font-size: 1.6em;
+  font-weight: bold;
+  line-height: 1em;
+  padding: 0.5em 0.2em;
+}
+
+.view-teams-subteams .views-field.views-field-field-teambanner img {
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+}
+/* ====================================================================================*/
+
+/* =============================[teams view masonry]=======================================*/
+
+.view-teams-teammembers .masonry-item {
+  width: 32.4% !important;
+  text-align: center;
+}
+.view-teams-teammembers .views-field.views-field-field-userfirstname {
+  display: inline-block;
+  font-weight: bold;
+  margin-right: 2px;
+  margin-top: 1em;
+}
+.view-teams-teammembers .views-field.views-field-field-userlastname {
+  font-weight: bold;
+    display: inline-block;
+}
+
+.view-teams-teammembers .views-field.views-field-field-userprofileimg img {
+  border: 5px solid #fff;
+  border-radius: 100%;
+  height: 8em;
+  margin: 1em 0 0 0;
+  object-fit: cover;
+  width: 8em;
+  background:#fff
+}
+
+.view-teams-teammembers .views-field.views-field-field-userjobtitle {
+  text-align: center;
+  margin-bottom: 2em;
+}
+/* ====================================================================================*/
+
+/* =============================[ teamleader view masonry ]=======================================*/
+
+.field-name-field-teambanner .field-item img {
+  height: 16em;
+  object-fit: cover;
+}
+.view-teams-teamleaders .views-field.views-field-field-userbanner img {
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+    height: 177px;
+    width: 100%;
+}
+
+.view-teams-teamleaders .masonry-item {
+  background: #fff none repeat scroll 0 0;
+  border-radius: 15px;
+  margin: 0.4%;
+  padding: 0;
+  text-align: center;
+  width: 49%;
+  opacity:1
+}
+
+.view-teams-teamleaders .views-field.views-field-field-userprofileimg img {
+  border: 5px solid #fff;
+  border-radius: 100%;
+  height: 9em;
+  margin: 0 0 1em;
+  object-fit: cover;
+  width: 9em;
+    background: #fff none repeat scroll 0 0;
+}
+.view-teams-teamleaders .views-field.views-field-field-userfirstname {
+  display: inline-block;
+  font-weight: bold;
+  margin-right: 2px;
+}
+.view-teams-teamleaders .views-field.views-field-field-userlastname {
+  font-weight: bold;
+   display: inline-block;
+}
+.view-teams-teamleaders .views-field.views-field-field-userjobtitle {
+  padding-bottom: 1em;
+  text-align: center;
+}
+.view.view-teams-teamleaders.view-id-teams_teamleaders {
+  margin-bottom: 1em;
+}
+
+.views-field.views-field-field-teammanagernm {
+  font-size: 1.1em;
+  padding: 0 1em 0 0.96em;
+}
+
+.view-teams-subteams .views-field.views-field-field-teammanagernm {
+  font-size: 1.1em;
+  padding: 0 1em 0 0.96em;
+  display:block
+}
+.view-content.masonry-processed .teamleaderstop {
+  float: left;
+  /*left: 17% !important;*/
+  left: 0 !important;
+  position: relative !important;
+  width: 32.4%;
+
+}
+/* ====================================================================================*/
+
+/* =============================[ teams page view masonry ]=======================================*/
+
+.field.field-name-field-teambody.field-type-text-long.field-label-hidden {
+  background: #fff none repeat scroll 0 0;
+  border-radius: 12px;
+  font-size: 1.1em;
+  margin: 0.5em 0.5em 1em;
+  padding: 1em;
+}
+
+/*card author*/
+.view-id-card_author .views-field.views-field-field-userprofileimg img {
+  border: 5px solid #fff;
+  border-radius: 100%;
+  height: 6em;
+  margin: 1em 0 1em -0.5em;
+  object-fit: cover;
+  vertical-align: initial;
+  width: 6em;
+  float:left
+}
+
+/*misc*/
+.form-managed-file .file-icon {
+  display: none;
+}
+.row.reg {
+    margin-top:12em;
+    margin-bottom:9em
+}
+
+.view.view-teams-teammembers.view-id-teams_teammembers.view-display-id-block.teamMembers.view-dom-id-851e3871a79fc0a06c1221bd12d75bf7 {
+  display: none;
+}
+
+.view-card-author .views-field.views-field-field-userfirstname {
+  float: left;
+  font-weight: bold;
+  margin-left: -2em;
+  margin-top: 3em;
+}
+.view-card-author .views-field.views-field-field-userlastname {
+  float: left;
+  font-weight: bold;
+  margin-left: 0.3em;
+  margin-top: 3em;
+}
+.view-card-author .views-field.views-field-field-userjobtitle {
+    float: left;
+    margin-left: 2em;
+    margin-top: 3em;
+    display: none;
+}
+/* ====================================================================================*/
+
+/* =============================[ cards ]=======================================*/
+.view-id-cards .view-content.masonry-processed {
+  margin-top: 2em;
+}
+
+.view-flag-bookmarks-tab .masonry-processed.view-content {
+    margin-top:2em;
+}
+/* =============================[ IE HACKS ]=======================================*/
+
+  @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none)/*works in IE10+*/ {  
+
+.views-field.views-field-field-userbanner {
+    width: 100%;
+    text-align: center;
+    overflow: hidden;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+    height: 9em;
+}
+.createIcons.inline-list {
+    padding-left: 11%;
+    padding-right: 11%;
+    padding-top: 1em;
+}
+
+.node-type-card .createIcons.inline-list {
+    padding-top: 3.5em;
+}
+.view-id-cards .masonry-processed.view-content{
+    margin-top: 3em;
+}
+.page-user-collections .view-flag-bookmarks-tab .masonry-processed.view-content {
+    margin-top: 4em;
+}
+.usernamerole {
+  margin-top: 1.5em;
+}
+.inline-list.createIcons {
+    padding-left: 11%;
+    padding-right: 11%;
+    padding-top: 3em;
+}
+
+.view-teams-teamleaders .views-field.views-field-field-userprofileimg img {
+    margin: -6em 0 1em 0!important;
+    z-index: 99;
+    position: relative;
+}
+
+.view-id-card_author .views-field-field-userprofileimg.views-field {
+    margin-top: 0em;
+}
+
+.picture.views-field-field-userprofileimg.views-field {
+    margin-top: 0em;
+}
+
+.card .views-field-field-userprofileimg.views-field {
+    margin-top: 0em;
+}
+
+.view-teams-teamleaders .views-field-field-userprofileimg.views-field {
+    margin-top:0em!important;
+}
+.views-field-field-userprofileimg.views-field {
+    margin-top: -5em;
+}
+
+.field-name-field-teambanner .field-item img {
+    height: auto!important;
+}
+.field-name-field-teambanner.field {
+    margin: 3em 0.5em 1.1em 0.5em;
+}
+
+
+.team.field-name-title.field {
+
+    margin-top: -1em !important;
+
+}
+.view-empty {
+    margin-top: 7em;
+}
+.createCard.row {
+    margin-top: 12em;
+    margin-bottom: 6em;
+}
+/* ====================================================================================*/
+
+}

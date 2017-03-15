@@ -1,0 +1,110 @@
+/* =======================================================================================================================================================================
+   Imports
+   ===================================================================================================================================================================== */
+
+@import 'base/_config'; 
+
+
+/* ========================================================================================================================================================================
+   Base Styles
+   ===================================================================================================================================================================== */
+   
+:Focus {
+	outline: none;
+}
+
+a {
+	text-decoration: none;
+	color: $titleFont;
+	outline: 0;
+	&::after {
+		padding-left: 6px;
+	}
+	&:focus {
+		outline: 0;
+	}
+	&:hover {
+		text-decoration: none;
+		color: #1998f2;
+		outline: 0;
+	}
+}
+/* ====================================================================================*/
+
+/* ================================[Tags ]==================================== */  
+
+.tags li {
+  background: #29c1ad none repeat scroll 0 0;
+  border-radius: 6px;
+  color: #fff;
+  float: left;
+  font-size: 0.7em;
+  margin: 0 14px 10px -8px;
+  padding: 1px 10px;
+}
+
+.contenttags {
+  background: #bbb none repeat scroll 0 0;
+  border-radius: 6px;
+  color: #fff;
+  float: left;
+  font-size: 0.7em;
+  margin: 0 14px 10px -8px;
+  padding: 1px 10px;
+}
+
+.views-field.views-field-field-tags a  {
+  background: #29c1ad none repeat scroll 0 0;
+  border-radius: 6px;
+  color: #fff;
+  float: left;
+  font-size: 0.7em;
+  margin: 0 14px 10px -8px;
+  padding: 1px 10px;
+    pointer-events: none;
+}
+/* ====================================================================================*/
+
+/* ================================[Edit Buttons]==================================== */  
+.tabs.primary > li {
+  display: inline;
+}
+.view-teams-subteams .masonry-item a {
+  color: #333;
+}
+/* ====================================================================================*/
+
+/* ================================[Hidden login]==================================== */  
+.login a {
+  color: #e3e4e5;
+}
+
+.field.field-name-field-userlocation.field-type-taxonomy-term-reference a {
+  cursor: auto;
+  pointer-events: none;
+}
+.field.field-name-field-userlocation.field-type-taxonomy-term-reference a:hover {
+  cursor: auto;
+  color:#555;
+  pointer-events: none;
+
+}
+/* ====================================================================================*/
+
+/* ================================[ Card ]====================================*/   
+.pointsTotal a {
+  color: #fff;
+}
+
+.dl a {
+  font-size: 0.6em !important;
+  font-weight: normal;
+}
+.field.field-name-field-cardurl a {
+  color: #1998f2;
+}
+.commenter-name .username {
+  color: #1998f2;
+  font-size: 1.1em;
+}
+/* ====================================================================================*/

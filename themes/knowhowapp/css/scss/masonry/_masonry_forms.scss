@@ -1,0 +1,787 @@
+/* =======================================================================================================================================================================
+   Imports
+   ===================================================================================================================================================================== */
+
+@import 'base/_config'; 
+
+html, body {
+    height:100%;
+} 
+
+/* ================================[ @Extend Elements ]====================================*/    
+//@extend-elements
+//original selectors
+//button.alert,  .button.alert
+%baseButtons {
+	background-color: $linkBlue;
+	border-color: $titleFont;
+	color: $white;
+}   
+/* ====================================================================================*/
+
+/* ================================[ Buttons ]====================================*/ 
+button {
+font-size: 0.96rem;
+&.alert {
+	@extend %baseButtons;
+	&:hover {
+		background-color: $linkBlue;
+	}
+	&:focus {
+		background-color: $linkBlue;
+	}
+}
+}
+
+.button.searchBtn {
+height:35px;
+}
+
+button.radius,.button.radius {
+border-radius:4px;
+}
+
+button,.button {
+box-shadow:0 1px 1px $white inset;
+box-sizing:content-box;
+border:1px solid $titleFont;
+display:inline-block;
+text-align:center;
+vertical-align:middle;
+white-space:nowrap;
+-moz-border-radius:.3em;
+font-family:$skyReg, $skyText, $hel, $arial;
+margin:0;
+}
+
+button,.button:hover,.button:active,.button:focus {
+box-shadow:0 1px 1px $white inset;
+box-sizing:content-box;
+}
+
+button.tiny,.button.tiny {
+font-size:.875em;
+padding:.525rem 1rem;
+}
+.button.alert {
+	@extend %baseButtons;
+	&:hover {
+		background-color: $red;
+	}
+	&:focus {
+		background-color: $red;
+	}
+}
+input::-webkit-input-placeholder, textarea::-webkit-input-placeholder { 
+    color:$kanaLink; 
+}
+input:-moz-placeholder, textarea:-moz-placeholder { 
+    color:$kanaLink;
+}
+input::-moz-placeholder, textarea::-moz-placeholder { 
+    color:$kanaLink;  
+}
+input:-ms-input-placeholder, textarea:-ms-input-placeholder { 
+    color:$kanaLink;
+}
+/* ================================[ Form Elements ]====================================*/ 
+input,
+textarea,
+button,
+select,
+a {
+  -webkit-tap-highlight-color: $titleFont;
+}
+
+label {
+	margin-top: 0.5rem;
+	.required {
+		color: $red;
+		padding-left: 10px;
+	}
+}
+
+label small {
+  color:$teal;
+  font-family: $skyReg, $skyText, $hel, $arial;
+  font-size: 11px;
+  padding: 0 10px;
+}
+.top-bar input {
+    height: inherit;
+}
+input[type="text"], input[type="password"], input[type="date"], input[type="datetime"], input[type="datetime-local"], input[type="month"], input[type="week"], input[type="email"], input[type="number"], input[type="search"], input[type="tel"], input[type="time"], input[type="url"], input[type="color"], textarea {
+    height: 2.2125rem;
+}
+
+input {
+	font-size: 0.96rem;
+}
+
+select {
+	font-size: 0.96rem;
+	background-color: $white;
+	&:hover {
+		background-color: $white;
+	}
+}
+textarea {
+	font-size: 0.96rem;
+	margin-bottom: 5px;
+	width: 100%!important;
+}
+.radios {
+    padding-top: 10px;
+}
+.inline-list>li {
+
+    margin-left: 0.6em;
+}
+/* ====================================================================================*/
+
+/* ================================[ Abide / Form Errors ]====================================*/ 
+
+.error > label > small {
+  color:$teal;
+  font-family: $skyReg, $skyText, $hel, $arial;
+  font-size: 11px;
+  padding: 0 10px;
+}
+.error label {
+	color: $linkBlue;
+	&.error {
+		color: $linkBlue;
+	}
+}
+[data-abide] .error small.error, [data-abide] span.error, [data-abide] small.error {
+  background: $teal none repeat scroll 0 0;
+  color: $white;
+  display: block!important;
+  font-size: 0.75rem;
+  font-style: italic;
+  font-weight: normal;
+  margin-bottom:5px;
+  margin-top:0;
+  padding: 4px 7px;
+}
+[data-abide] span.error, [data-abide] small.error {
+  display: none!important;
+}
+/* ====================================================================================*/
+
+/* ================================[ Tables ]====================================*/ 
+table { 
+	width: 100%;
+    border: 1px solid $mediumGrey;
+    font-family: $skyReg, $skyText, $hel, $arial!important;
+    display: inline-table;
+    margin: 1rem auto;
+    max-width: initial;
+    width: 100%;
+	max-width: initial;
+	border:none;
+	display: inline-table;
+    table-layout: fixed;
+	tr td {
+		border: 1px solid $mediumGrey;
+        word-wrap: break-word !important;
+	}
+    th {
+        border:1px solid $mediumGrey;
+    }
+    thead {
+        border:1px solid $mediumGrey;
+    }
+}
+table tr th, table tr td {
+    text-align: left;
+}
+table tr th {
+  background:$lightestGrey none repeat scroll 0 0;
+  color: $titleFont;
+  font-family: skytextregular,sky text,helvetica,arial !important;
+  font-size: 1.1rem;
+  font-weight: bolder;
+  text-align: left;
+}
+table tr td {
+  color: $bodyFont;
+ font-family: $skyReg, $skyText, $hel, $arial!important;
+  font-size: 1rem;
+  text-align: left;
+}
+table ul, table ol, table dl {
+  font-size: inherit!important;
+  font-weight: normal;
+  line-height: 1.25em !important;
+  font-family: $skyReg, $skyText, $hel, $arial!important;
+  list-style-position: outside;
+  margin-bottom: 0.35rem;
+  margin-top: 0.6rem;
+  color: inherit;
+}
+table tr.even, table tr.alt, table tr:nth-of-type(2n) {
+  background: $white none repeat scroll 0 0;
+}table thead tr th, table tfoot tr th, table tfoot tr td, table tbody tr th, table tbody tr td, table tr td {
+  vertical-align: top;
+}   
+table thead{
+  background:$lightestGrey none repeat scroll 0 0;
+  color: $titleFont;
+  font-family: skytextregular,sky text,helvetica,arial !important;
+  font-size: 1.1rem;
+  font-weight: lighter;
+  padding: 0.8em 0.625rem;
+  text-align: left;
+}
+
+table thead{
+    text-align: left;
+}
+/* ====================================================================================*/
+
+/* ====================================[ search go button ]====================================*/ 
+.form-submit{
+    background: #29c1ac none repeat scroll 0 0;
+    border-image: none;
+    border-radius: 4px !important;
+    box-shadow: none;
+    color: white;
+    font-size: 1em;
+    height: 33px;
+    line-height: 20px;
+    margin-top: 1em;
+    padding: 6px 12px;
+	&:hover {
+		background: $darkTeal none repeat scroll 0 0!important;
+	}
+	&:active {
+		background: $darkTeal none repeat scroll 0 0!important;
+	}
+	&:focus {
+		background: $darkTeal none repeat scroll 0 0!important;
+	}
+}
+
+.form-submit-403{
+    background: #29c1ac none repeat scroll 0 0;
+    border-image: none;
+    border-radius: 4px !important;
+    border: medium none;
+    box-shadow: none;
+    color: white;
+    font-size: 1em;
+    height: 33px;
+    line-height: 33px;
+    margin-top: 1em;
+    padding: 6px 12px;
+	&:hover {
+		background: $darkTeal none repeat scroll 0 0!important;
+        border: medium none;
+	}
+	&:active {
+		background: $darkTeal none repeat scroll 0 0!important;
+        border: medium none;
+	}
+	&:focus {
+		background: $darkTeal none repeat scroll 0 0!important;
+        border: medium none;
+	}
+}
+
+.form-item.form-type-item {
+  display: none;
+}
+
+.button.postfix {
+	background: $teal none repeat scroll 0 0;
+    border: medium none;
+    box-shadow: none;
+    color: white;
+    font-size: 1.6em;
+    height: 22px;
+    line-height: 20px;
+    margin-left: 0;
+    margin-top: 0;
+    padding-left: 4px;
+	&:hover {
+		background: $darkTeal none repeat scroll 0 0!important;
+	}
+	&:active {
+		background: $darkTeal none repeat scroll 0 0!important;
+	}
+	&:focus {
+		background: $darkTeal none repeat scroll 0 0!important;
+	}
+}
+
+.comment-form label {
+  color: #4d4d4d;
+  cursor: pointer;
+  display: block;
+  font-size: 1em;
+  font-weight: normal;
+  line-height: 1.5;
+  margin-bottom: 0;
+}
+
+/* ====================================================================================*/
+
+
+/* ================================[ registration form ]====================================*/ 
+.form-item.form-type-password.form-item-pass-pass2.confirm-parent {
+  margin-bottom: 3em;
+}
+.password-confirm {
+  margin-bottom: -2em;
+}
+
+.form-item .description, .description {
+  background: #F7F9FC none repeat scroll 0 0;
+  border-bottom: 1px dotted #ccc;
+  border-left: 1px dotted #ccc;
+  border-right: 1px dotted #ccc;
+  color: #333;
+  font-size: 0.8em;
+  margin: 1em 0;
+  overflow-wrap: unset;
+  padding: 1em;
+}
+
+.form-item.form-type-password.form-item-pass-pass2.confirm-parent{
+  background: #F7F9FC none repeat scroll 0 0;
+  border-bottom: 1px dotted #ccc;
+  border-left: 1px dotted #ccc;
+  border-right: 1px dotted #ccc;
+  color: #333;
+  font-size: 0.8em;
+  margin: 1em 0 3em;
+  overflow-wrap: unset;
+  padding: 0.1em 1em;
+}
+
+.image-widget.form-managed-file.clearfix {
+  background: #F7F9FC none repeat scroll 0 0;
+  border-left: 1px dotted #ccc;
+  border-right: 1px dotted #ccc;
+  border-top: 1px dotted #ccc;
+  margin-bottom: -1em;
+  padding: 1em;
+}
+.form-item.form-type-textfield.form-item-name {
+  background: #F7F9FC none repeat scroll 0 0;
+  border-left: 1px dotted #ccc;
+  border-right: 1px dotted #ccc;
+  border-top: 1px dotted #ccc;
+  margin-bottom: -2em;
+  padding: 1em;
+}
+
+.form-item.form-type-textfield.form-item-mail {
+  background: #F7F9FC none repeat scroll 0 0;
+  border-left: 1px dotted #ccc;
+  border-right: 1px dotted #ccc;
+  margin-bottom: -1em;
+  padding:0.1em 1em;
+}
+
+.form-item.form-type-password.form-item-pass-pass1.password-parent{
+  background: #F7F9FC none repeat scroll 0 0;
+  border-left: 1px dotted #ccc;
+  border-right: 1px dotted #ccc;
+  margin-bottom: -1em;
+  padding: 0.1em 1em;
+}
+
+.form-item.form-type-textfield.form-item-field-userfirstname-und-0-value .description {
+  display: none;
+}
+
+.field-type-text.field-name-field-userlastname.field-widget-text-textfield.form-wrapper .description {
+  display: none;
+}
+
+.form-item.form-type-textfield.form-item-mail .description {
+  display: none;
+}
+.form-item.form-type-password-confirm.form-item-pass .description {
+  display: none !important;
+}
+
+.form-item.form-type-checkbox.form-item-select-roles-4.input[type="file"], input[type="checkbox"], input[type="radio"], select {
+  margin: 0;
+}
+.form-item.form-type-checkbox.form-item-select-roles-5.input[type="file"], input[type="checkbox"], input[type="radio"], select {
+  margin: 0;
+}
+.form-item.form-type-checkbox.form-item-select-roles-6.input[type="file"], input[type="checkbox"], input[type="radio"], select {
+  margin: 0;
+}
+
+.form-item-campaignmonitor-lists .description {
+    margin-top: -8px;    padding-bottom: 11px;    border: none;    background: transparent;padding-left: 1.7em;}
+
+#edit-field-userfirstname > div {
+  margin-top: 2em;
+}
+
+#edit-field-usertradableskills > div {
+  margin-top: 2em;
+}
+
+#edit-field-userbio > div {
+  margin-top: 2em;
+}
+
+#user-register-form label {
+  color: #4d4d4d;
+  cursor: pointer;
+  font-size: 0.96em;
+  line-height: 1.5;
+}
+
+.password-indicator {
+  background-color: #777;
+  height: 5px;
+  width: 100%;
+}
+
+h1#the_logo {
+  margin: 0;
+}
+/* ====================================================================================*/
+
+/* ================================[ Profile ]====================================*/ 
+.form-item.form-type-textfield.form-item-field-userjobtitle-und .description {
+  background: transparent none repeat scroll 0 0;
+  border: 0 none;
+  margin-top: -1em;
+  padding: 0 0 1em;
+    line-height: 1.2em;
+}
+
+#edit-field-userbio > div .description {
+  background: transparent none repeat scroll 0 0;
+  border: 0 none;
+  line-height: 1.2em;
+  margin-top: 0.6em;
+  padding: 0 0 1em;
+}
+
+.form-item.form-type-textfield.form-item-field-userskilltags-und .description {
+  background: transparent none repeat scroll 0 0;
+  border: 0 none;
+  margin-top: -1em;
+  padding: 0 0 1em;
+    line-height: 1.2em;
+}
+
+.form-item-field-userteam-und-0-target-id .description {
+  background: #fff none repeat scroll 0 0;
+  border: 0 none;
+  margin-top: -1em;
+  padding: 0;
+}
+.form-item-field-usertradableskills-und-0-value .description {
+  background: #fff none repeat scroll 0 0;
+  border: 0 none;
+  margin-bottom: 2em;
+  margin-top: 0;
+  padding: 0;
+}
+.form-item.form-type-select.form-item-field-userteam-und .description {
+  background: transparent none repeat scroll 0 0;
+  border: 0 none;
+  margin-top: 0.3em;
+  padding: 0 0 1em;
+    line-height: 1.2em;
+}
+.form-item.form-type-textfield.form-item-name .description {
+  background: transparent none repeat scroll 0 0;
+  border: 0 none;
+  line-height: 1.2em;
+  margin-top: -7px;
+  padding: 0 0 1em;
+}
+/* ====================================================================================*/
+
+/* ================================[ Registration ]====================================*/ 
+.regForm img {
+    margin-left: 25%;
+    margin-right: 25%;
+    margin-top: 0.2em;
+    margin-bottom: 0.4em;
+}
+.password-indicator div {
+  background-color: #29c1ac !important;
+  height: 100%;
+  width: 0;
+}
+#auth_box #middle_part {
+  background: #fff none repeat scroll 0 0;
+  border-radius: 3px;
+  box-shadow: 0 0 3px 1px #ccc;
+  overflow: hidden;
+  padding: 15px;
+  width: 100%;
+}
+#wrapperBackbround2 .form-item.form-type-textfield.form-item-name {
+  background: #f7f9fc none repeat scroll 0 0;
+  border-left: 1px dotted #ccc;
+  border-right: 1px dotted #ccc;
+  border-top: 1px dotted #ccc;
+  height: 8em;
+  margin-bottom: -2em;
+  padding: 1em;
+}
+
+#auth_box input[type="text"], #auth_box input[type="password"] {
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  font-size: 15px;
+  padding: 5px;
+  width: 100%;
+}
+
+.form-item.form-type-password.form-item-pass {
+  margin: 0 1em;
+}
+.reg .form-item.form-type-textfield.form-item-name {
+  background: #f7f9fc none repeat scroll 0 0;
+  border-left: 1px dotted #ccc;
+  border-right: 1px dotted #ccc;
+  border-top: 1px dotted #ccc;
+  height: 11em;
+  margin-bottom: -5em;
+  padding: 1em;   
+  border-bottom: 1px dotted #ccc; 
+}
+.form-item.form-type-textfield.form-item-name {
+  background: #f7f9fc none repeat scroll 0 0;
+  border-left: 1px dotted #ccc;
+  border-right: 1px dotted #ccc;
+  border-top: 1px dotted #ccc;
+  height: 11em;
+  margin-bottom: -5em;
+  padding: 1em;
+  border-bottom: 1px dotted #ccc;
+}
+/* ====================================================================================*/
+
+/* ================================[ Login Page ]====================================*/ 
+#auth_box {
+    font-family: sans-serif;
+    margin: 7em auto;
+    padding: 0;
+    width: 22em;
+}
+#auth_box #bottom_part a {
+  color: #555;
+  font-size: 14px;
+}
+#auth_box #middle_part {
+  background: #fff none repeat scroll 0 0;
+  border-radius: 12px;
+  box-shadow: none;
+  overflow: hidden;
+  padding: 15px;
+  width: 100%;
+}
+#auth_box .back_link {
+  display: none;
+  padding: 15px 0 0;
+}
+#wrapperBackbround #auth_box h1#the_logo img {
+  max-width: 300px;
+}
+.form-item.form-type-textfield.form-item-name {
+  background: transparent none repeat scroll 0 0;
+  border: medium none;
+  height: 11em;
+  margin-bottom: -5em;
+  padding: 1em;
+}
+#auth_box h1#the_logo img {
+  max-width: 250px;
+}
+.login a {
+  color: #777;
+  font-size: 0.86em;
+  line-height: 1em;
+}
+.password_link,.register_link,.login_link {
+  padding-left: 20px;
+}
+#wrapperBackbround2 {
+  background: rgba(0, 0, 0, 0) url("/sites/all/themes/knowhowapp/images/background.jpg") repeat scroll 0 0 / cover ;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  background-repeat: repeat;
+}
+#wrapperBackbround {
+  background: rgba(0, 0, 0, 0) url("/sites/all/themes/knowhowapp/images/background.jpg") repeat scroll 0 0 / cover ;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  background-repeat: repeat;
+  height:100%
+}
+#wrapperBackbround3 {
+  background: rgba(0, 0, 0, 0) url("/sites/all/themes/knowhowapp/images/background.jpg") repeat scroll 0 0 / cover ;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  background-repeat: repeat;
+  height:100%
+}
+.form-actions.form-wrapper {
+  float: left;
+  padding-bottom: 1em;
+  padding-left: 1em;
+}
+.containerReg {
+    margin-top: 2em;
+}
+
+.logo-wrapper .logo {
+  left: 50%;
+  margin-left: -8.5em;
+  position: absolute;
+  right: 50%;
+  top: 3px;
+  width: 18em;
+}
+
+.form-item.form-type-password.form-item-pass-pass2.confirm-parent > label {
+  line-height: 4em;
+}
+.password-strength-title {
+  display: inline;
+  font-size: 0.8em;
+}
+.password-strength-text {
+  float: right;
+  font-size: 0.8em;
+  font-weight: bold;
+}
+article {
+  margin-top: 14em;
+}
+input#edit-cancel {
+    margin-left: 6px;
+}
+
+.messageTem {
+    margin-top: 9em;
+}
+
+div.error, tr.error {
+  background-color: #29c1ac!important;
+  border-radius: 6px!important;
+  color: #fff!important;
+}
+div.error {
+  border: 1px solid #fff!important;
+  background-image: none!important;
+  border-color: #fff!important;
+    font-family: skytextregular;
+  font-size: 1.1em;
+  line-height: 1em;
+}
+.messages.error a {
+  color: #fff!important;
+    font-family: skytextregular;
+  font-size: 1em;
+  line-height: 1em;
+}
+div.messages {
+  background-position: 8px 8px;
+  background-repeat: no-repeat;
+  border: 1px solid #fff;
+  margin: 24px;
+  padding: 10px 20px;
+    font-family: skytextregular;
+  font-size: 1.1em;
+  line-height: 1em;
+}
+div.status {
+  background-image: none;
+  border-color: #fff;
+  font-family: skytextregular;
+  font-size: 1.1em;
+  line-height: 1em;
+}
+div.status, table tr.ok {
+  background-color: #fff;
+}
+#wrapperBackbround3 .ForgotPassWd_hide {
+display:none}
+
+
+#wrapperBackbround2.ForgotPassWd_hide {
+  display: block;
+}
+
+div#wrapperBackbround3 .form-item-mail {display:none}   
+
+#middle_part ul {
+  color: #fff !important;
+  font-size: 1em;
+}
+/* ====================================================================================*/
+
+/* ================================[ Edit Node (card) ]====================================*/ 
+.comment-form input#edit-submit {
+    margin-left: -1em;
+}
+.node-card-form label {
+    font-size: 1em;
+    margin: 1em 0 0.2em 0;
+}
+.node-card-form .description {
+    background: #fff;
+    border: none;
+    margin-top: 0.2em;
+    padding: 0;
+}
+.node-card-form input#edit-submit {
+   margin-left: -1em;
+   margin-top: -1em;
+   margin-right:0.6em
+}
+.node-card-form input#edit-field-cardurl-und-0-url {
+    margin: 0;
+}
+
+.node-card-form .image-widget.form-managed-file.clearfix {
+    background: #fff;
+    border: none;
+}
+.form-item label {
+    display: block;
+    font-weight: bold;
+    pointer-events: none;
+}
+.new {
+  display: none;
+}
+
+.row.editContent {
+    margin-top: 6em;
+    margin-bottom:2em;
+}
+.image-preview > img {
+    margin-right: 1em;
+    margin-top: 1.1em;
+    width: 6em;
+    margin-left: -15px;
+}
+div.image-widget-data {
+  float: left;
+  width: 80%;
+}
+.editContent .description {
+  display: none;
+}
+/* ====================================================================================*/

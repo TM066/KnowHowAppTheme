@@ -1,0 +1,204 @@
+/* =======================================================================================================================================================================
+   Imports
+   ===================================================================================================================================================================== */
+
+@import 'base/_config'; 
+
+
+/* ========================================================================================================================================================================
+   Smaller mobile interfaces
+   ===================================================================================================================================================================== */
+
+@media only screen and (max-width: 40em)/* max-width 640px, mobile-only styles, use when QAing mobile issues */ { 
+  
+/* ================================[ Masonry ]====================================*/
+.masonry-item{background:#fff none repeat scroll 0 0;border-radius:15px;margin:.4%;padding:0;width:100%}
+.panel.contents{width:100%}
+#content{height:auto;margin-bottom:4em}
+.row.bio{margin-top:1.5em}
+.row.reg{margin-top:9em}
+.logo-wrapper .logo{margin-left:-5em;width:10em;top:5px}
+/* ===============================================================================*/
+
+/* ================================[ Nav ]====================================*/
+.top-bar{height:5em;margin-top:3.1em!important}
+nav.tab-bar{height:6em;top:0}
+/* ===============================================================================*/
+
+/* ================================[ Footer ]====================================*/
+footer.row{height:5em}
+.inline-list{margin-left:-1.375rem;margin-right:-1.375rem}
+.inline-list>li{margin-left:0}
+.footIcon{margin:1.2em -0.6em .1em 0;width:4.2em}
+.footIcon.logout img{width:4.7em}
+/* ===============================================================================*/
+
+/* ================================[ Edit page ]====================================*/
+.inline-list.createIcons {
+margin-top: -1em;
+    padding-left: 3%;
+    padding-right: 0;
+     padding-top: 1em;
+}
+/* ===============================================================================*/
+
+/* ================================[ Off Canvas ]====================================*/
+.tab-bar{margin-top:0}
+#auth_box{font-family:sans-serif;margin:4em auto;padding:0;width:15em}
+.navIcon{margin:.6em 0 .1em .6em;width:2em}
+.right-off-canvas-menu{width:18.625rem}
+.artIcon.profileEdit.right{margin-left:-.2em;margin-top:-.1em}
+.artIcon img{width:2.3em!important}
+.move-left > .inner-wrap {
+    -ms-transform: translate(-18.625rem, 0, 0);
+    -webkit-transform: translate3d(-18.625rem, 0, 0);
+    -moz-transform: translate3d(-18.625rem, 0, 0);
+    -ms-transform: translate3d(-18.625rem, 0, 0);
+    -o-transform: translate3d(-18.625rem, 0, 0);
+    transform: translate3d(-18.625rem, 0, 0);
+}
+/* ===============================================================================*/
+
+/* ================================[ Profile ]====================================*/ 
+.pointDesc{padding:10px 5px 0;font-size:.86em;margin:0!important}
+.oval img{border:8px solid #fff;border-radius:100%;height:6em;margin-top:-4em;object-fit:cover;width:6em;background-color:#fff}
+.BioImage img{border-top-left-radius:15px;border-top-right-radius:15px;height:120px;width:100%}
+p{font-size:1em}
+.nameFields{color:#666;display:inline-flex;font-size:2.3em}
+.jobRole{color:#666;font-size:1.1em}
+.views-field.views-field-title{font-size:1.4em;padding:.6em .6em .2em 0;.tabsddatabstab-titleafont-size:.8em!important;padding:0 0.2em!important}
+.field.field-name-field-userbio.field-type-text-long.field-label-above{font-size:.9em}
+.pointsDiv{border-radius:12px;font-size:1em;margin-bottom:20px;margin-left:1%;margin-right:1%;padding-bottom:5px;width:48%!important}
+.panel.bio.contents{background:#e3e4e5 none repeat scroll 0 0;border:0 none;padding:1em 0!important;background:#E3E4E5;width:100%;margin-bottom:10em}
+.field.field-name-title.team{font-size:1.5em;margin-top:-.6em}
+.field-name-field-teambanner .field-item img{height:10em;border-top-left-radius:12px;border-top-right-radius:12px}
+.artIcon.right.editCard img{margin-left:10px;margin-top:-.4em;margin-right:1em}
+/* ====================================================================================*/
+
+/* ================================[ Error Page ]====================================*/ 
+.messageTem{margin-top:5em}
+.transPanel p{font-size:.9em}
+/* ====================================================================================*/
+
+/* ================================[ Article Flags ]====================================*/ 
+.flag-wrapper{height:1.8em;position:relative;width:2.2em}
+.flag-wrapper.flag-follow a.unflag-action{background:rgba(0,0,0,0) url("/sites/all/themes/knowhowapp/images/App_Icons/unfollow.svg") no-repeat scroll 0 0 / 50px auto;color:transparent;display:block;height:2.8em;text-indent:-9999em;width:2.8em}
+.flag-wrapper.flag-follow a.unflag-action:hover{background:rgba(0,0,0,0) url("/sites/all/themes/knowhowapp/images/App_Icons/unfollow_hover.svg") no-repeat scroll 0 0 / 50px auto;color:transparent;display:block;height:2.8em;text-indent:-9999em;width:2.8em}
+.flag-wrapper.flag-follow a.flag-action{background:rgba(0,0,0,0) url("/sites/all/themes/knowhowapp/images/App_Icons/follow.svg") no-repeat scroll 0 0 / 50px auto;color:transparent;display:block;height:2.8em;text-indent:-9999em;width:2.8em}
+.flag-wrapper.flag-follow a.flag-action:hover{background:rgba(0,0,0,0) url("/sites/all/themes/knowhowapp/images/App_Icons/follow_hover.svg") no-repeat scroll 0 0 / 50px auto;color:transparent;display:block;height:2.8em;text-indent:-9999em;width:2.8em}
+.flag-wrapper.flag-bookmarks a.unflag-action{background:rgba(0,0,0,0) url("/sites/all/themes/knowhowapp/images/App_Icons/collect_active.svg") no-repeat scroll 0 0 / 53px auto;color:transparent;display:block;height:2.4em;text-indent:-9999em;width:2.4em;margin-top:0}
+.flag-wrapper.flag-bookmarks a.unflag-action:hover{background:rgba(0,0,0,0) url("/sites/all/themes/knowhowapp/images/App_Icons/collect_active_hover.svg") no-repeat scroll 0 0 / 53px auto;color:transparent;display:block;height:2.4em;text-indent:-9999em;width:2.4em;margin-top:0}
+.flag-wrapper.flag-bookmarks a.flag-action{background:rgba(0,0,0,0) url("/sites/all/themes/knowhowapp/images/App_Icons/collect.svg") no-repeat scroll 0 0 / 53px auto;color:transparent;display:block;height:2.4em;text-indent:-9999em;width:2.4em;margin-top:0}
+.flag-wrapper.flag-bookmarks a.flag-action:hover{background:rgba(0,0,0,0) url("/sites/all/themes/knowhowapp/images/App_Icons/collect_hover.svg") no-repeat scroll 0 0 / 53px auto;color:transparent;display:block;height:2.4em;text-indent:-9999em;width:2.4em;margin-top:0}
+.flag-wrapper.flag-likes a.unflag-action{background:rgba(0,0,0,0) url("/sites/all/themes/knowhowapp/images/App_Icons/love_active.svg") no-repeat scroll 0 0 / 53px auto;color:transparent;display:block;height:2.4em;text-indent:-9999em;width:2.4em;margin-top:0;margin-left:4px}
+.flag-wrapper.flag-likess a.unflag-action:hover{background:rgba(0,0,0,0) url("/sites/all/themes/knowhowapp/images/App_Icons/love_active_hover.svg") no-repeat scroll 0 0 / 53px auto;color:transparent;display:block;height:2.4em;text-indent:-9999em;width:2.4em;margin-top:0;margin-left:4px}
+.flag-wrapper.flag-likes a.flag-action{background:rgba(0,0,0,0) url("/sites/all/themes/knowhowapp/images/App_Icons/love.svg") no-repeat scroll 0 0 / 53px auto;color:transparent;display:block;height:2.4em;text-indent:-9999em;width:2.4em;margin-top:0;margin-left:4px}
+.flag-wrapper.flag-likes a.flag-action:hover{background:rgba(0,0,0,0) url("/sites/all/themes/knowhowapp/images/App_Icons/love_hover.svg") no-repeat scroll 0 0 / 53px auto;color:transparent;display:block;height:2.4em;text-indent:-9999em;width:2.4em;margin-top:0;margin-left:4px}
+/* ====================================================================================*/
+
+/* ================================[ Article Card ]====================================*/ 
+.artIcon.right.lovecard img{margin-left:10px;margin-top:-10px}
+.view-id-card_author .views-field.views-field-field-userprofileimg img{border:5px solid #fff;border-radius:100%;height:5em;margin:1em 0 1em -.5em;object-fit:cover;vertical-align:initial;width:5em;float:left}
+.artIcon img.comments{height:3em;margin-left:.5em;margin-top:-.3em}
+.views-field.views-field-field-userprofileimg.picture img{height:3.5em;margin:1em 0 1em -.5em;object-fit:cover;width:3.5em}
+.authorInfo{font-size:.72em;margin-left:-3em;margin-top:2em;padding:0}
+.authorInfo2 > strong{font-size:.72em;margin-left:-4.1em;padding:0}
+.row.editContent{margin-bottom:10em}
+.views-field-counter.views-field,.field-name-love.field,.views-field-created.views-field{font-size:.8em}
+.views-field-counter.views-field,.field-name-love.field,.views-field-created.views-field,.field.field-name-comments{
+    font-size: 0.8em;}
+.views-field.views-field-field-userfirstname {font-weight:bold;font-size:0.9em;margin-left:-2em;}
+.views-field.views-field-field-userjobtitle {font-size:0.9em;margin-left:-2em;}
+.cards .views-field.views-field-field-userprofileimg img {height: 5em;width: 5em;}
+/* ====================================================================================*/
+
+/* ================================[ Arrticle card icons ]====================================*/ 
+.icon-loved,.icon-viewed, .icon-comments {
+  width: 1em;
+}
+.icon-loved_card, .icon-viewed_card, .icon-comments_card {
+  width: 1em;
+}
+/* ================================================================================*/
+
+/* ================================[ Team View  ]====================================*/ 
+.view-teams-subteams .masonry-item{height:auto;width:98%!important}
+.view-teams-subteams .views-field.views-field-title{font-size:1.6em;line-height:1em;padding:.5em}
+.view-teams-teamleaders .masonry-item{width:98%}
+.view-teams-teammembers .masonry-item{width:98%!important}
+.view-content.masonry-processed .teamleaderstop{float:left;position:absolute!important;width:100%}
+.field.field-name-field-teambanner{margin:4em .4em .5em}
+.view-teams-teamleaders .views-field.views-field-field-userbanner img{border-top-left-radius:12px;border-top-right-radius:12px;height:98px;width:100%}
+.view-teams-teamleaders .views-field.views-field-field-userprofileimg img{margin:0 0 1em}
+/* ====================================================================================*/
+
+/* ================================[ BOOKMARKS ]====================================*/ 
+
+.cards.bookmarks .masonry-item{background:#fff none repeat scroll 0 0;border-radius:15px;margin:.4%;padding:0;width:99%}
+.title.bookmark{font-size:.66em;line-height:1em;margin:0.5em -0.4em 0.5em 0.3em}
+.namefield{font-size:.88em;margin:0 0 1em .4em}
+.tags.bookmarks{font-size:.76em;margin-bottom:.5em;margin-left:-.4em;margin-top:-1.5em}
+
+/* ================================[ BOOKMARKS ]====================================*/ 
+
+/* ================================[ Following]====================================*/ 
+
+.cards.following .views-field.views-field-field-userprofileimg img {  height: 4em; width: 4em;}
+.cards.following .views-field.views-field-field-userfirstname {
+  margin:-1.6em 0 0 -2.5em;
+  font-size:0.86em;
+}
+.cards.following .views-field.views-field-field-userjobtitle{
+     margin: 0 0 0 -2.5em;
+    font-size: 0.86em;
+}
+.view-user-following {
+    margin-top: 2em;
+}
+.cards.following .flag-wrapper.flag-follow a.unflag-action{background:rgba(0,0,0,0) url("/sites/all/themes/knowhowapp/images/App_Icons/unfollow.svg") no-repeat scroll 0 0 / 33px auto;color:transparent;height: 3em; width: 3em; margin-bottom: -3em; margin-right: -28px; margin-top: 0.5em;}
+.cards.following .flag-wrapper.flag-follow a.unflag-action:hover{background:rgba(0,0,0,0) url("/sites/all/themes/knowhowapp/images/App_Icons/unfollow_hover.svg") no-repeat scroll 0 0 / 33px auto;color:transparent;height: 3em; width: 3em; margin-bottom: -3em; margin-right: -28px; margin-top: 0.5em;}
+.cards.following .flag-wrapper.flag-follow a.flag-action{background:rgba(0,0,0,0) url("/sites/all/themes/knowhowapp/images/App_Icons/follow.svg") no-repeat scroll 0 0 / 33px auto;color:transparent;height: 3em; width: 3em; margin-bottom: -3em; margin-right: -28px; margin-top: 0.5em;}
+.cards.following .flag-wrapper.flag-follow a.flag-action:hover{background:rgba(0,0,0,0) url("/sites/all/themes/knowhowapp/images/App_Icons/follow_hover.svg") no-repeat scroll 0 0 / 33px auto;color:transparent;height: 3em; width: 3em; margin-bottom: -3em; margin-right: -27px; margin-top: 0.5em;}
+
+/* ====================================================================================*/
+
+/* ================================[ Followers ]====================================*/ 
+
+.cards.followers .views-field.views-field-field-userprofileimg img {  height: 4em; width: 4em;}
+.cards.followers .views-field.views-field-field-userfirstname {
+  margin:-1.6em 0 0 -2.5em;
+  font-size:0.86em;
+}
+.cards.followers .views-field.views-field-field-userjobtitle{
+     margin: 0 0 0 -2.5em;
+    font-size: 0.86em;
+}
+.cards.followers {
+    margin-top: 2em;
+}
+.cards.followers .flag-wrapper.flag-follow a.unflag-action{background:rgba(0,0,0,0) url("/sites/all/themes/knowhowapp/images/App_Icons/unfollow.svg") no-repeat scroll 0 0 / 33px auto;color:transparent;height: 3em; width: 3em; margin-bottom: -3em; margin-right: -28px; margin-top: 0.5em;}
+.cards.followers .flag-wrapper.flag-follow a.unflag-action:hover{background:rgba(0,0,0,0) url("/sites/all/themes/knowhowapp/images/App_Icons/unfollow_hover.svg") no-repeat scroll 0 0 / 33px auto;color:transparent;height: 3em; width: 3em; margin-bottom: -3em; margin-right: -28px; margin-top: 0.5em;}
+.cards.followers .flag-wrapper.flag-follow a.flag-action{background:rgba(0,0,0,0) url("/sites/all/themes/knowhowapp/images/App_Icons/follow.svg") no-repeat scroll 0 0 / 33px auto;color:transparent;height: 3em; width: 3em; margin-bottom: -3em; margin-right: -28px; margin-top: 0.5em;}
+.cards.followers .flag-wrapper.flag-follow a.flag-action:hover{background:rgba(0,0,0,0) url("/sites/all/themes/knowhowapp/images/App_Icons/follow_hover.svg") no-repeat scroll 0 0 / 33px auto;color:transparent;height: 3em; width: 3em; margin-bottom: -3em; margin-right: -27px; margin-top: 0.5em;}
+
+/* ====================================================================================*/
+
+/* ================================[ IE HACKS START ]====================================*/ 
+
+  @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none)/*works in IE10+*/ {  
+
+.footIcon{margin:-1.6em -0.6em .1em .6em;width:4.2em}
+.node-type-card .createIcons.inline-list{padding-top:1.5em}
+.logout.footIcon img{width:5em;margin-top:4em}
+nav.tab-bar{height:9em}
+.field-name-field-teambanner.field{margin:4em .5em .5em}
+.inline-list.createIcons{margin-top:0}
+.team.field-name-title.field{margin:.33em;margin-top:-1em!important;margin-bottom:-1em}
+.middle.tab-bar-section {top: -2em;}
+.page-customerror-404 .logo-wrapper .logo { left: 50%;position: absolute; right: 50%;top: 8px; width: 9em;}
+.node-type-card .logo-wrapper .logo, .page-node-add-card .logo-wrapper .logo, .page-customerror-403 .logo-wrapper .logo{ margin-left: -4em;left: 50%;position: absolute; right: 50%;top: 8px; width: 9em;}
+}
+/* ================================[ IE HACKS FINISH ]====================================*/ 
+
+
+}

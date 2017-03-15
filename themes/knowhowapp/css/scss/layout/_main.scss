@@ -1,0 +1,10 @@
+// Non-modular or client styles for the .l-content region.
+
+div.contextual-links-wrapper {
+  display: none;
+  font-size: 90%;
+  position: fixed;
+  right: 5px;
+  top: 8em;
+  z-index: 999;
+}

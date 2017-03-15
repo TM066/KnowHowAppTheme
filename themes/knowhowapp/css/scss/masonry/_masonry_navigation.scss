@@ -1,0 +1,222 @@
+/* =======================================================================================================================================================================
+   Imports
+   ===================================================================================================================================================================== */
+
+@import 'base/_config'; 
+
+/* ========================================================================================================================================================================
+   Top Bar
+   ===================================================================================================================================================================== */
+.top-bar {
+    height: 5.4em;
+    margin-top: 1.6em !important;
+    overflow: visible;
+    position: fixed;
+    top: 0;
+    z-index: 100;
+    padding-top: 3px;
+}
+
+nav.tab-bar {
+  background-color: #e3e4e5;
+  height: 6em;
+  position: fixed;
+  top: 0em;
+  width: 100%;
+  z-index: 101;
+}
+/*========change when off canvas is in =============*/
+
+.tab-bar-section.middle {
+  left: 1em;
+  right: 1em;
+}
+/*=======================================*/
+
+.contain-to-grid .top-bar {
+  margin: 0 auto;
+  max-width: 100%;
+    background: #E3E4E5 none repeat scroll 0 0;
+  width: 100%;
+}
+.topNav-bar-section ul li > a {
+  color: white;
+  display: block;
+  font-size: 0.8125rem;
+  font-weight: normal;
+  padding: 12px 0 12px 0.9375rem;
+  text-transform: none;
+  width: 100%;
+}
+.topNav-bar-section li:not(.has-form) a:not(.button) {
+background: transparent none repeat scroll 0 0;
+  line-height: 2.8125rem;
+  padding: 0 0.9375rem;
+}
+
+.topNav-bar-section ul li {
+background: transparent none repeat scroll 0 0;
+}
+.topNav-bar-section li:not(.has-form) a:not(.button) {
+background: transparent none repeat scroll 0 0;
+  color: #333;
+  line-height: 2.8125rem;
+  padding: 0 0.9375rem;
+}
+.topNav-bar-section li:not(.has-form) a:hover:not(.button) {
+background: transparent none repeat scroll 0 0;
+}
+.topNav-bar-section ul {
+  display: inline;
+  height: auto !important;
+  width: auto;
+  display: block;
+  font-size: 16px;
+  margin: 0;
+  padding: 0;
+}
+.topNav-bar-section ul li {
+background: transparent none repeat scroll 0 0;
+  float: left;
+}  
+.navIcon {
+    margin: 1.2em 0 0.1em 0.6em;
+    width: 3.2em;
+}
+
+.top-bar .toggle-topbar.menu-icon a::after {
+  box-shadow: 1px 0 4px rgba(255, 255, 255, 0.3), 1px 0 4px rgba(255, 255, 255, 0.2);
+}
+
+/* ========================================================================================================================================================================
+  Footer
+   ===================================================================================================================================================================== */
+
+.footIcon {
+    margin: 1.2em 0 0.1em 0.6em;
+    width: 6em;
+}
+footer.row {
+  background: #E3E4E5 none repeat scroll 0 0;
+  bottom: 0;
+  height:6em;
+  max-width: 100%;
+  position: fixed;
+  width: 100%;
+}
+.footer-bar-section {
+  left: 0;
+  position: relative;
+  transition: left 300ms ease-out 0s;
+  width: auto; 
+}
+.footer-bar-section ul {
+  display: inline;
+  height: auto !important;
+  width: auto;
+  display: block;
+  font-size: 18px;
+  margin: 0;
+  padding: 0;
+}
+.footer-bar-section ul li {
+background: transparent none repeat scroll 0 0;
+  float: left;
+  list-style: outside none none;
+}
+.footerIcon {
+  margin:1.2em 0 0 0.6em;
+  width: 5.5em;
+}
+
+.footer ul {
+  list-style: outside none none;
+  margin-bottom: 0;
+}
+.footer-bar-section ul li > a {
+  color: white;
+  display: block; 
+  font-size: 0.8125rem;
+  font-weight: normal;
+  padding: 12px 0 12px 0.9375rem;
+  text-transform: none;
+  width: 100%;
+}
+.footer-bar-section li:not(.has-form) a:not(.button) {
+background: transparent none repeat scroll 0 0;
+  line-height: 2.8125rem;
+  padding: 0 0.9375rem;
+}
+.footer-bar-section li:not(.has-form) a:not(.button) {
+background: transparent none repeat scroll 0 0;
+  color: #333;
+  line-height: 2.8125rem;
+  padding: 0 0.9375rem;
+}
+
+/* ========================================================================================================================================================================
+  Tab Bar
+   ===================================================================================================================================================================== */
+
+.tab-bar {
+    -webkit-backface-visibility: hidden;
+    background: #E3E4E5;
+    color: white;
+    height: 2.8125rem;
+    line-height: 2.8125rem;
+    position: relative;
+    margin-bottom: 1em;
+}
+.left-small, .right-small {
+  border-left: medium none transparent;
+  border-right: medium none transparent;
+}
+
+.right-off-canvas-menu {
+    width: 28.625rem;
+
+}
+.move-left > .inner-wrap {
+    -ms-transform: translate(-28.625rem, 0, 0);
+    -webkit-transform: translate3d(-28.625rem, 0, 0);
+    -moz-transform: translate3d(-28.625rem, 0, 0);
+    -ms-transform: translate3d(-28.625rem, 0, 0);
+    -o-transform: translate3d(-28.625rem, 0, 0);
+    transform: translate3d(-28.625rem, 0, 0);
+}
+/* ====================================================================================*/ 
+
+/* ================================[ IE HACKS START ]====================================*/ 
+
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none)/*works in IE10+*/ {  
+
+.node-type-card .logo-wrapper .logo, .page-node-add-card .logo-wrapper .logo, .page-customerror-403 .logo-wrapper .logo{
+    left: 50%;
+    margin-left: -8.5em;
+    position: absolute;
+    right: 50%;
+    top: 13px;
+    width: 18em;
+}
+.page-customerror-404 .logo-wrapper .logo{
+    left: 50%;
+    margin-left: -8.5em;
+    position: absolute;
+    right: 50%;
+    top: 13px;
+    width: 18em;
+}
+.node-type-card .middle.tab-bar-section,.page-node-add-card .middle.tab-bar-section, .page-node-add-card .middle.tab-bar-section,.page-customerror-403 .middle.tab-bar-section {
+    left: 1em;
+    right: 1em;
+    top: -38px;
+}
+.page-customerror-404 .middle.tab-bar-section {
+    left: 1em;
+    right: 1em;
+    top: -38px;
+}
+
+
+}
+/* ====================================================================================*/ 

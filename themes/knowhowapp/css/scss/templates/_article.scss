@@ -1,0 +1,207 @@
+/* =======================================================================================================================================================================
+   Imports
+   ===================================================================================================================================================================== */
+
+@import 'base/_config'; 
+
+/* ================================[ Default Panel items ]====================================*/ 
+.row.container{margin-top:6em}
+.row.article{margin-top:0}
+.panel{margin-bottom:1.25rem;padding:0;background-color:#fff;border:1px solid #e3e4e5;border-top-right-radius:15px;border-top-left-radius:15px}
+.createCard .panel.contents{margin-bottom:1em}
+.panel.contents{width:80%;margin:0 auto}
+.field-item.even,.field-item.odd{line-height:1.4em}
+.view-empty {  margin-top: 1em;}
+
+/* ====================================================================================*/
+
+/* ================================[ Article ]====================================*/ 
+.ArticleImage img{width:100%;border-top-right-radius:15px;border-top-left-radius:15px}
+.fullImage{padding:0}
+.field.field-name-field-tags.field-type-taxonomy-term-reference{margin-left:1em}
+.field.field-name-comments {  padding: 0.8em 0;}
+.text-center.bioInfo {  background: #fff none repeat scroll 0 0;  margin-bottom: 10px;  padding-bottom: 15px;}
+.tabs.bio {
+    background: #e3e4e5 none repeat scroll 0 0;
+}
+ul.tabs.bio{
+margin: 0 !important;
+@include block-grid(2);
+li {
+padding: 0;
+a {
+text-align: center;
+}
+}
+}
+
+.tabs dd>a,.tabs .tab-title>a{background-color:#d4d8db;border-top-left-radius:12px;border-top-right-radius:12px;color:#444;display:block;font-family:skytextregular;font-size:1.1em;outline:medium none;padding:1rem 2rem}
+.tabs dd>a:hover,.tabs .tab-title>a:hover{text-decoration:none}
+.oval img{border:8px solid #fff;border-radius:100%;height:9em;margin-top:-6em;object-fit:cover;width:9em;background-color:#fff}
+.columns.ArticleImage{padding:0}
+.columns.BioImage{padding:0}
+.artIcon img{padding:0;margin:0;width:2.8em;height:3.2em}
+
+/* ====================================================================================*/
+
+/* ================================[ Following ]====================================*/ 
+
+.cards.following .views-field.views-field-field-userprofileimg img {  
+border: 5px solid #fff;  border-radius:100%; height: 5em;  margin: 0 0 1em -1em;  object-fit: cover;  width: 5em;}
+.cards.following .views-field.views-field-field-userfirstname {
+  font-weight: bold;
+  margin: -0.6em 0 0.2em -2em;
+  line-height: 1em;
+}
+.cards.following .views-field.views-field-field-userjobtitle{
+  margin: 0 0 0 -2em;
+  line-height: 1em;
+} 
+.view-user-following {
+    margin-top: 2em;
+}
+.flag-wrapper {
+    z-index: 100;
+}
+.cards.following .flag-wrapper.flag-follow a.unflag-action{background:rgba(0,0,0,0) url("/sites/all/themes/knowhowapp/images/App_Icons/follow.svg") no-repeat scroll 0 0 / 50px auto;color:transparent;height: 3em; width: 3em; margin-bottom: -4em; margin-right: -9px; margin-top: 0.5em;}
+.cards.following .flag-wrapper.flag-follow a.unflag-action:hover{background:rgba(0,0,0,0) url("/sites/all/themes/knowhowapp/images/App_Icons/follow_hover.svg") no-repeat scroll 0 0 / 50px auto;color:transparent;height: 3em; width: 3em; margin-bottom: -4em; margin-right: -9px; margin-top: 0.5em;}
+.cards.following .flag-wrapper.flag-follow a.flag-action{background:rgba(0,0,0,0) url("/sites/all/themes/knowhowapp/images/App_Icons/follow.svg") no-repeat scroll 0 0 / 50px auto;color:transparent;height: 3em; width: 3em; margin-bottom: -4em; margin-right: -9px; margin-top: 0.5em;}
+.cards.following .flag-wrapper.flag-follow a.flag-action:hover{background:rgba(0,0,0,0) url("/sites/all/themes/knowhowapp/images/App_Icons/follow_hover.svg") no-repeat scroll 0 0 / 50px auto;color:transparent;height: 3em; width: 3em; margin-bottom: -4em; margin-right: -9px; margin-top: 0.5em;}
+
+/* ====================================================================================*/
+
+/* ================================[Followers ]====================================*/ 
+
+.cards.followers .views-field.views-field-field-userprofileimg img {  
+border: 5px solid #fff;  border-radius:100%; height: 5em;  margin: 0 0 1em -1em;  object-fit: cover;  width: 5em;}
+.cards.followers .views-field.views-field-field-userfirstname {
+  font-weight: bold;
+  margin: -0.6em 0 0 -2em;
+   width: 100%;
+}
+.cards.followers .views-field.views-field-field-userjobtitle{
+  margin: 0 0 0 -2em;
+   width: 100%;
+} 
+.view-user-followers {
+    margin-top: 2em;
+}
+.cards.followers .flag-wrapper.flag-follow a.unflag-action{background:rgba(0,0,0,0) url("/sites/all/themes/knowhowapp/images/App_Icons/unfollow.svg") no-repeat scroll 0 0 / 50px auto;color:transparent;height: 3em; width: 3em; margin-bottom: -4em; margin-right: -9px; margin-top: 0.5em;}
+.cards.followers .flag-wrapper.flag-follow a.unflag-action:hover{background:rgba(0,0,0,0) url("/sites/all/themes/knowhowapp/images/App_Icons/unfollow_hover.svg") no-repeat scroll 0 0 / 50px auto;color:transparent;height: 3em; width: 3em; margin-bottom: -4em; margin-right: -9px; margin-top: 0.5em;}
+.cards.followers .flag-wrapper.flag-follow a.flag-action{background:rgba(0,0,0,0) url("/sites/all/themes/knowhowapp/images/App_Icons/follow.svg") no-repeat scroll 0 0 / 50px auto;color:transparent;height: 3em; width: 3em; margin-bottom: -4em; margin-right: -9px; margin-top: 0.5em;}
+.cards.followers .flag-wrapper.flag-follow a.flag-action:hover{background:rgba(0,0,0,0) url("/sites/all/themes/knowhowapp/images/App_Icons/follow_hover.svg") no-repeat scroll 0 0 / 50px auto;color:transparent;height: 3em; width: 3em; margin-bottom: -4em; margin-right: -9px; margin-top: 0.5em;}
+
+/* ====================================================================================*/
+
+/* ================================[ Team ]====================================*/ 
+.field.field-name-title{color:#333;font-size:2em;font-weight:bold;line-height:1em;padding:.6em .4em .6em .4em}
+.field.field-name-body{padding:.6em .4em .6em .4em}
+.field.field-name-field-skills{padding:.6em 0 .6em .6em}
+.field.field-name-totalcount{padding:.8em}
+.field.field-name-created{padding:.8em .8em 0 0}
+.field.field-name-field_job_title{padding:.1em .6em 0}
+.field.field-name-love{padding:.8em 0}
+/* ====================================================================================*/
+
+/* ================================[ USer Profile ]====================================*/ 
+.BioImage img{border-top-left-radius:15px;border-top-right-radius:15px;height:200px;width:100%}
+.pointsScore{background-color:#128c7b;border:1px solid #128c7b;bottom:0;display:block;position:absolute;width:100%}
+.pointsBk{background-color:#29c1ad;border-radius:10px 10px 0 0;height:50px;position:relative}
+.nameFields{display:inline-flex;font-size:2.6em;color:#666}
+.jobRole{color:#666;font-size:1.3em}
+.jobDept,.jobDept a,.jobDept:hover{color:#949494;font-size:1em}
+.tabs-content>.content.active{display:block;float:none;background:#fff;padding:1em}
+.points{margin-top:20px;position:static}
+.pointsDiv{margin-left:1%;margin-right:1%;border-radius:10px 10px;background-color:#fff;float:left;margin-bottom:20px;text-align:center;font-size:1.2em;padding-bottom:20px}
+.pointsBk{background-color:#a6ce39;border-radius:10px 10px 0 0;height:50px;position:relative}
+.pointsTotal{font-size:.9em;font-weight:bold;color:#fff;padding-top:10px}
+.pointsScore{background-color:#749027;border:1px solid #749027;position:absolute;bottom:0;display:block;width:98%}
+.pointDesc{padding:10px}
+.columns.pointsBlocks{margin:0;padding:0 0 10px}
+.profile label{color:#fff}
+.profileImage img{border:2px solid #fff;border-radius:100%;margin-left:8em;width:34%}
+.profile h2{color:#fff;font-family:skytextregular;font-size:1.4em}
+.artIcon.profileEdit.right{margin-left:-1em;margin-top:-0.07em}
+.pointTabs{padding:0;width:100%}
+#content>div{margin-top:6em}
+.field-name-field-userskilltags a{ background: #29c1ad none repeat scroll 0 0;border-radius: 6px;color: #fff; float: left; font-size: 0.9em; margin: 0 14px 10px -8px; padding: 1px 10px; text-decoration:none; pointer-events:none}
+.field-name-field-userskilltags a:hover{ background: #22AA98 none repeat scroll 0 0; text-decoration:none; color: #fff;}
+/* ====================================================================================*/
+
+/* ================================[ Not active ]====================================*/
+.vertical-tab-button.first.last.selected{display:none}
+.form-item.form-type-checkbox.form-item-flag-bookmarks{display:none}
+#edit-picture.form-wrapper{display:none}
+#edit-timezone.form-wrapper{display:none}
+.not-active{pointer-events:none;cursor:default}
+.field-name-field-userbio .field-label{display:none}
+.field-name-field-usertradableskills .field-label{display:none}
+.field-name-field-userprofileimg .field-label{display:none}
+.field-name-field-userjobtitle .field-label{display:none}
+.field-name-field-userskilltags .field-label{display:none}
+div#messages{display:none}
+.tabs.primary{display:none}
+.form-item.form-type-checkbox.form-item-flag-likes {  display: none;}
+/* ====================================================================================*/
+
+/* ================================[ Author Block]====================================*/
+.views-field.views-field-field-userprofileimg.picture img{border:5px solid #fff;border-radius:100%;height:5em;margin:1em 0 1em -0.5em;object-fit:cover;width:5em}
+.authorInfo{margin-left:-5em;margin-top:2.4em}
+.authorInfo2>strong{margin-left:-5em}
+.submit{padding:0 1.5em}
+.commentsWrap{padding:0 .8em}
+/* ====================================================================================*/
+
+/* ================================[ Article Flags ]====================================*/
+.flag-wrapper{height:2.8em;position:relative;width:2.8em}
+.flag-wrapper.flag-follow a.unflag-action{background:rgba(0,0,0,0) url("/sites/all/themes/knowhowapp/images/App_Icons/unfollow.svg") no-repeat scroll 0 0 / 60px auto;color:transparent;display:block;height:2.8em;text-indent:-9999em;width:2.8em}
+.flag-wrapper.flag-follow a.unflag-action:hover{background:rgba(0,0,0,0) url("/sites/all/themes/knowhowapp/images/App_Icons/unfollow_hover.svg") no-repeat scroll 0 0 / 60px auto;color:transparent;display:block;height:2.8em;text-indent:-9999em;width:2.8em}
+.flag-wrapper.flag-follow a.flag-action{background:rgba(0,0,0,0) url("/sites/all/themes/knowhowapp/images/App_Icons/follow.svg") no-repeat scroll 0 0 / 60px auto;color:transparent;display:block;height:2.8em;text-indent:-9999em;width:2.8em}
+.flag-wrapper.flag-follow a.flag-action:hover{background:rgba(0,0,0,0) url("/sites/all/themes/knowhowapp/images/App_Icons/follow_hover.svg") no-repeat scroll 0 0 / 60px auto;color:transparent;display:block;height:2.8em;text-indent:-9999em;width:2.8em}
+.flag-wrapper.flag-likes a.unflag-action{background:rgba(0,0,0,0) url("/sites/all/themes/knowhowapp/images/App_Icons/love_active.svg") no-repeat scroll 0 0 / 63px auto;color:transparent;display:block;height:3em;text-indent:-9999em;width:3em;margin-top:4px}
+.flag-wrapper.flag-likes a.unflag-action{background:rgba(0,0,0,0) url("/sites/all/themes/knowhowapp/images/App_Icons/love_active.svg") no-repeat scroll 0 0 / 63px auto;color:transparent;display:block;height:3em;text-indent:-9999em;width:3em;margin-top:4px}
+.flag-wrapper.flag-likes a.unflag-action:hover{background:rgba(0,0,0,0) url("/sites/all/themes/knowhowapp/images/App_Icons/love_active_hover.svg") no-repeat scroll 0 0 / 63px auto;color:transparent;display:block;height:3em;text-indent:-9999em;width:3em;margin-top:4px}
+.flag-wrapper.flag-likes a.flag-action{background:rgba(0,0,0,0) url("/sites/all/themes/knowhowapp/images/App_Icons/love.svg") no-repeat scroll 0 0 / 63px auto;color:transparent;display:block;height:3em;text-indent:-9999em;width:3em;margin-top:4px}
+.flag-wrapper.flag-likes a.flag-action:hover{background:rgba(0,0,0,0) url("/sites/all/themes/knowhowapp/images/App_Icons/love_hover.svg") no-repeat scroll 0 0 / 63px auto;color:transparent;display:block;height:3em;text-indent:-9999em;width:3em;margin-top:4px}
+.flag-wrapper.flag-bookmarks a.unflag-action{background:rgba(0,0,0,0) url("/sites/all/themes/knowhowapp/images/App_Icons/collect_active.svg") no-repeat scroll 0 0 / 60px auto;color:transparent;display:block;height:3em;text-indent:-9999em;width:3em;margin-top:4px}
+.flag-wrapper.flag-bookmarks a.unflag-action:hover{background:rgba(0,0,0,0) url("/sites/all/themes/knowhowapp/images/App_Icons/collect_active_hover.svg") no-repeat scroll 0 0 / 60px auto;color:transparent;display:block;height:3em;text-indent:-9999em;width:3em;margin-top:4px}
+.flag-wrapper.flag-bookmarks a.flag-action{background:rgba(0,0,0,0) url("/sites/all/themes/knowhowapp/images/App_Icons/collect.svg") no-repeat scroll 0 0 / 60px auto;color:transparent;display:block;height:3em;text-indent:-9999em;width:3em;margin-top:4px}
+.flag-wrapper.flag-bookmarks a.flag-action:hover{background:rgba(0,0,0,0) url("/sites/all/themes/knowhowapp/images/App_Icons/collect_hover.svg") no-repeat scroll 0 0 / 60px auto;color:transparent;display:block;height:3em;text-indent:-9999em;width:3em;margin-top:4px}
+/* ================================================================================*/
+
+/* ================================[ Create Card ]====================================*/ 
+.row.createCard{margin-top:12em;margin-bottom:6em}
+/* ================================================================================*/
+
+/* ================================[ Article Comments]====================================*/ 
+.field.field-name-comment-body{margin-bottom:-1em;margin-top:1em;color:#232323}
+.commenter-name{font-size:.94em}
+/* ====================================================================================*/
+
+/* ================================[ Radioactivity ]====================================*/ 
+.field-type-radioactivity{display:none}
+.toolbar .field-type-radioactivity{display:block}
+/* ====================================================================================*/
+
+/* ================================[ BOOKMARKS ]====================================*/ 
+.title.bookmark{margin:.5em 0}
+.namefield{margin:0 0 1em .4em}
+.cards.bookmarks .masonry-item{background:#fff none repeat scroll 0 0;border-radius:15px;margin:.4%;padding:0;width:20%}
+.tags.bookmarks{font-size:.86em;margin-bottom:.5em;margin-left:-.4em;margin-top:-1.5em}
+.views-field-body.bookmarks {  padding: 0 1em 1em;}
+/* ====================================================================================*/
+
+/* ================================[ icons ]====================================*/ 
+.icon-loved,.icon-viewed, .icon-comments {
+  float: left;
+  margin: 15px 5px 0 0;
+  width: 1.4em;
+}
+.icon-loved_card, .icon-viewed_card, .icon-comments_card {
+  float: left;
+  margin: 15px 5px 0 0;
+  width: 1.6em;
+}
+/* ================================================================================*/
+
+

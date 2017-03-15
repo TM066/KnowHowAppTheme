@@ -1,0 +1,53 @@
+/* =======================================================================================================================================================================
+   Imports
+   ===================================================================================================================================================================== */
+
+@import 'base/_config'; 
+
+@media only screen and (min-width: 78.2em)
+{
+    .masonry-item{background:#fff none repeat scroll 0 0;border-radius:15px;margin:.4%;padding:0;width:32%}
+/* ================================[ Nav ]====================================*/
+nav.tab-bar{top:0;padding-bottom:7em}
+/* =========================================================================*/
+
+/* ================================[ Profile ]====================================*/
+.pointsDiv{width:23%}
+.row.bio{margin-top:1.7em}
+.artIcon.profileEdit.right{margin-left:-1em;margin-top:-.1em}
+/* ===============================================================================*/
+
+/* ================================[ Article ]====================================*/
+.views-field-counter.views-field,.field-name-love.field,.views-field-created.views-field,.field.field-name-comments{
+    font-size: 1.2em;
+}
+/* ===============================================================================*/
+
+/* ================================[ Team Leaders ]====================================*/
+.view-teams-subteams .masonry-item{width:32.4%!important;height:15.5em}
+.view-teams-subteams .views-field.views-field-title{font-size:1.5em;padding:.5em}
+.view-teams-teammembers .masonry-item{width:32.4%!important}
+.view-teams-subteams .views-field.views-field-field-teammanagernm{padding:0 .7em}
+.view-content.masonry-processed .teamleaderstop{float:left;position:relative!important;width:42.4%}
+.view-teams-teamleaders .views-field.views-field-field-userbanner img{height:158px}
+.view-teams-teamleaders .views-field.views-field-field-userprofileimg img{margin:0 0 1em}
+/* ===================================================================================*/
+
+/* ================================[ Article Flags ]====================================*/
+.flag-wrapper.flag-bookmarks a.unflag-action{background:rgba(0,0,0,0) url(/sites/all/themes/knowhowapp/images/App_Icons/collect_active.svg) no-repeat scroll 0 0 / 63px auto;color:transparent;display:block;height:3em;text-indent:-9999em;width:3em;margin-top:6px}
+.flag-wrapper.flag-bookmarks a.unflag-action:hover{background:rgba(0,0,0,0) url(/sites/all/themes/knowhowapp/images/App_Icons/collect_active_hover.svg) no-repeat scroll 0 0 / 63px auto;color:transparent;display:block;height:3em;text-indent:-9999em;width:3em;margin-top:6px}
+.flag-wrapper.flag-bookmarks a.flag-action{background:rgba(0,0,0,0) url(/sites/all/themes/knowhowapp/images/App_Icons/collect.svg) no-repeat scroll 0 0 / 63px auto;color:transparent;display:block;height:3em;text-indent:-9999em;width:3em;margin-top:6px}
+.flag-wrapper.flag-bookmarks a.flag-action:hover{background:rgba(0,0,0,0) url(/sites/all/themes/knowhowapp/images/App_Icons/collect_hover.svg) no-repeat scroll 0 0 / 63px auto;color:transparent;display:block;height:3em;text-indent:-9999em;width:3em;margin-top:6px}
+/* =================================================================================*/
+
+/* ================================[ BOOKMARKS ]====================================*/ 
+.cards.bookmarks .masonry-item{background:#fff none repeat scroll 0 0;border-radius:15px;margin:.4%;padding:0;width:24%}
+/* =================================================================================*/
+
+/* ================================[ IE HACKS START ]====================================*/ 
+
+  @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none)/*works in IE10+*/ {  
+.middle.tab-bar-section {top: 0em;}
+/* ================================[ IE HACKS FINISH ]====================================*/ 
+}
+}

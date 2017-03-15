@@ -1,0 +1,73 @@
+
+* {
+  /* Prevent any object from being highlighted upon touch event*/
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+/* line 7, ../../scss/masonry/masonry_views.scss */
+.page {
+  background: #EDEEEF none repeat scroll 0 0;
+}
+
+/* line 10, ../../scss/masonry/masonry_views.scss */
+.masonry-item {
+  background: #fff none repeat scroll 0 0;
+  border-radius: 15px;
+  margin: 0.4%;
+  padding: 0;
+  width: 24%;
+}
+@media only screen and (min-width: 80.063em)and (max-width:118.063em){
+.masonry-item {
+  background: #fff none repeat scroll 0 0;
+  border-radius: 15px;
+  margin: 0.4%;
+  padding: 0;
+  width: 24%;
+}
+}
+
+
+
+@media only screen and (min-width: 78.2em){ 
+.masonry-item {
+  background: #fff none repeat scroll 0 0;
+  border-radius: 15px;
+  margin: 0.4%;
+  padding: 0;
+  width: 32.4%;
+}
+
+/* line 17, ../../scss/masonry/masonry_views.scss */
+.row.wider {
+  max-width: 100% !important;
+  width: 100% !important;
+}
+
+/* line 21, ../../scss/masonry/masonry_views.scss */
+img {
+  width: 100%;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+
+@media only screen and (max-width: 40em) {
+  /* line 29, ../../scss/masonry/masonry_views.scss */
+  .masonry-item {
+    background: #fff none repeat scroll 0 0;
+    border-radius: 15px;
+    margin: 0.4%;
+    padding: 0;
+    width: 100%;
+  }
+}
+@media only screen and (min-width: 40.063em) and (max-width: 60em) {
+  /* line 41, ../../scss/masonry/masonry_views.scss */
+  .masonry-item {
+    background: #fff none repeat scroll 0 0;
+    border-radius: 15px;
+        margin: 0.4%;
+    padding: 0;  
+    width: 49%;
+  }
+}

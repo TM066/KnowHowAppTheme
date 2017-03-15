@@ -1,0 +1,63 @@
+<?php
+
+/**
+ * Implements hook_views_api().
+ */
+function search_api_extended_processors_views_api() {
+  return array(
+    'api' => '3.0',
+  );
+}
+
+/**
+ * Returns a list of all available extended processors.
+ *
+ * @see hook_search_api_extended_processors_info()
+ *
+ * @return SearchApiProcessorInterface[]|null
+ *   An array of all available extended processors, keyed by id.
+ */
+function search_api_extended_processors_get_extended_processors() {
+  return search_api_get_processors();
+}
+
+
+/**
+ * The following functions were used when overriding the SearchApiQuery was
+ * not possible in the view plugin. We relied on SearchAPI hooks to alter the
+ * query and the results by injecting our Extended Processors at query time by
+ * using hook_search_api_query_alter() and hook_search_api_results_alter() hooks.
+ */
+/*
+function search_api_extended_processors_search_api_query_alter(SearchApiQuery &$query) {
+
+  if (search_api_extended_processors_query_is_extended($query)) {
+    $extendedQuery = search_api_extended_processors_get_extended_query($query);
+    $processors = $extendedQuery->getExtendedProcessors();
+    // Duplicating pre-execution of extended processors
+    foreach ($processors as $processor) {
+      $processor->preprocessSearchQuery($query);
+    }
+
+  }
+}
+
+function search_api_extended_processors_search_api_results_alter($results, SearchApiQuery $query) {
+  if (search_api_extended_processors_query_is_extended($query)) {
+    $extendedQuery = search_api_extended_processors_get_extended_query($query);
+    $processors = $extendedQuery->getExtendedProcessors();
+    foreach ($processors as $processor) {
+      $processor->postprocessSearchResults($results, $query);
+    }
+  }
+}
+
+function search_api_extended_processors_query_is_extended(SearchApiQuery $query) {
+  return !empty($query->getOption('extended_processors', array()));
+}
+
+function search_api_extended_processors_get_extended_query(SearchApiQuery $query) {
+  $extendedQuery = new SearchApiExtendedProcessorQuery($query->getIndex(), $query->getOptions());
+  return $extendedQuery;
+}
+*/

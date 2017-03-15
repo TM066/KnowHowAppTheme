@@ -1,0 +1,11 @@
+ @import 'base/_config'; 
+
+ /* ================================[ IE HACKS START ]====================================*/ 
+  @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none)/*works in IE10+*/ {  
+
+.bio.row {
+    margin-top: 1em;
+}
+
+}
+/* ================================[ IE HACKS FINISH ]====================================*/ 

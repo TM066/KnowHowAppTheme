@@ -1,0 +1,305 @@
+/* =======================================================================================================================================================================
+   Imports
+   ===================================================================================================================================================================== */
+
+@import 'base/_config'; 
+
+/* ======================================================================================================================
+  x-large Gird over 1025px 
+   ====================================================================================================================== */
+@media only screen and (min-width:118.063em)
+{
+
+/* ================================[ Masonry ]====================================*/
+.masonry-item{background:#fff none repeat scroll 0 0;border-radius:15px;margin:.4%;padding:0;width:24%}
+/* =============================================================================*/
+
+/* ================================[ Nav ]====================================*/
+nav.tab-bar{top:0;padding-bottom:7em}
+/* ============================================================================*/
+
+/* ================================[ Profile]====================================*/
+.row.bio{margin-top:1.7em}
+.pointsDiv{width:23%}
+.artIcon.profileEdit.right{margin-left:-1em;margin-top:-.1em}
+/* ==============================================================================*/
+
+/* ================================[ Team Leaders ]====================================*/
+.view-teams-subteams .masonry-item{width:32.4%!important;height:18em}
+.view-teams-subteams .views-field.views-field-title{font-size:1.8em;line-height:1em;padding:.5em}
+.views-field-counter.views-field,.field-name-love.field,.views-field-created.views-field,.field.field-name-comments{
+    font-size: 1.2em;
+}
+.view-content.masonry-processed .teamleaderstop{float:left;position:relative!important;width:32.4%!important}
+.view-teams-teamleaders .views-field.views-field-field-userprofileimg img{margin:0 0 1em}
+.view-teams-teamleaders .views-field.views-field-field-userbanner img{height:177px}
+/* ===================================================================================*/
+
+/* ================================[ Article Flags ]====================================*/
+.flag-wrapper.flag-bookmarks a.unflag-action{background:rgba(0,0,0,0) url(/sites/all/themes/knowhowapp/images/App_Icons/collect_active.svg) no-repeat scroll 0 0 / 63px auto;color:transparent;display:block;height:3em;text-indent:-9999em;width:3em;margin-top:6px}
+.flag-wrapper.flag-bookmarks a.unflag-action:hover{background:rgba(0,0,0,0) url(/sites/all/themes/knowhowapp/images/App_Icons/collect_active_hover.svg) no-repeat scroll 0 0 / 63px auto;color:transparent;display:block;height:3em;text-indent:-9999em;width:3em;margin-top:6px}
+.flag-wrapper.flag-bookmarks a.flag-action{background:rgba(0,0,0,0) url(/sites/all/themes/knowhowapp/images/App_Icons/collect.svg) no-repeat scroll 0 0 / 63px auto;color:transparent;display:block;height:3em;text-indent:-9999em;width:3em;margin-top:6px}
+.flag-wrapper.flag-bookmarks a.flag-action:hover{background:rgba(0,0,0,0) url(/sites/all/themes/knowhowapp/images/App_Icons/collect_hover.svg) no-repeat scroll 0 0 / 63px auto;color:transparent;display:block;height:3em;text-indent:-9999em;width:3em;margin-top:6px}
+/* ==================================================================================*/
+
+/* ================================[ BOOKMARKS ]====================================*/ 
+.cards.bookmarks .masonry-item{background:#fff none repeat scroll 0 0;border-radius:15px;margin:.4%;padding:0;width:19%}
+/* ===================================================================================*/
+/* ================================[ Following ]====================================*/ 
+.cards.following .views-field.views-field-field-userfirstname {
+  font-weight: bold;
+  margin: 0 0 0 -3em;
+}
+.cards.following .views-field.views-field-field-userjobtitle{
+  margin: 0 0 0 -3em;
+} 
+
+/* ==================================================================================*/
+/* ================================[ IE HACKS START ]====================================*/ 
+
+  @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none)/*works in IE10+*/ {  
+.middle.tab-bar-section {top: 0em;}
+/* ================================[ IE HACKS FINISH ]====================================*/ 
+}
+}
+
+/* ======================================================================================================================
+  x-large Gird over 1440px 
+   ====================================================================================================================== */
+@media only screen and (min-width: 90.063em)and (max-width:118.063em)
+{
+/* ================================[ Masonry ]====================================*/
+.masonry-item{background:#fff none repeat scroll 0 0;border-radius:15px;margin:.4%;padding:0;width:24%}
+/* ==============================================================================*/
+
+/* ================================[ Nav]====================================*/
+nav.tab-bar{top:0;padding-bottom:7em}
+/* ===========================================================================*/
+
+/* ================================[Profile]====================================*/
+.pointsDiv{width:23%}
+.row.bio{margin-top:1.7em}
+.artIcon.profileEdit.right{margin-left:-1em;margin-top:-.1em}
+/* ===============================================================================*/
+
+/* ================================[ Team Leaders ]====================================*/
+.view-teams-subteams .masonry-item{width:32.4%!important;height:18em}
+.view-teams-subteams .views-field.views-field-title{font-size:1.8em;line-height:1em;padding:.5em}
+.view-content.masonry-processed .teamleaderstop{float:left;position:relative!important;width:32.4%!important}
+.view-teams-teamleaders .views-field.views-field-field-userprofileimg img{margin:0 0 1em}
+.view-teams-teamleaders .views-field.views-field-field-userbanner img{height:177px}
+/* =================================================================================*/
+
+/* ================================[ Article Flags ]====================================*/
+.flag-wrapper.flag-bookmarks a.unflag-action{background:rgba(0,0,0,0) url(/sites/all/themes/knowhowapp/images/App_Icons/collect_active.svg) no-repeat scroll 0 0 / 63px auto;color:transparent;display:block;height:3em;text-indent:-9999em;width:3em;margin-top:6px}
+.flag-wrapper.flag-bookmarks a.unflag-action:hover{background:rgba(0,0,0,0) url(/sites/all/themes/knowhowapp/images/App_Icons/collect_active_hover.svg) no-repeat scroll 0 0 / 63px auto;color:transparent;display:block;height:3em;text-indent:-9999em;width:3em;margin-top:6px}
+.flag-wrapper.flag-bookmarks a.flag-action{background:rgba(0,0,0,0) url(/sites/all/themes/knowhowapp/images/App_Icons/collect.svg) no-repeat scroll 0 0 / 63px auto;color:transparent;display:block;height:3em;text-indent:-9999em;width:3em;margin-top:6px}
+.flag-wrapper.flag-bookmarks a.flag-action:hover{background:rgba(0,0,0,0) url(/sites/all/themes/knowhowapp/images/App_Icons/collect_hover.svg) no-repeat scroll 0 0 / 63px auto;color:transparent;display:block;height:3em;text-indent:-9999em;width:3em;margin-top:6px}
+/* =======================================================================================*/
+
+/* ================================[ BOOKMARKS ]====================================*/ 
+.cards.bookmarks .masonry-item{background:#fff none repeat scroll 0 0;border-radius:15px;margin:.4%;padding:0;width:19%}
+/* ====================================================================================*/ 
+
+}
+
+/* ======================================================================================================================
+  x-large Gird Structuring
+   ====================================================================================================================== */
+  .xlarge-block-grid-1 > li {
+    width: 100%;
+    list-style: none; }
+    .xlarge-block-grid-1 > li:nth-of-type(n) {
+      clear: none; }
+    .xlarge-block-grid-1 > li:nth-of-type(1n+1) {
+      clear: both; }
+
+  .xlarge-block-grid-2 > li {
+    width: 50%;
+    list-style: none; }
+    .xlarge-block-grid-2 > li:nth-of-type(n) {
+      clear: none; }
+    .xlarge-block-grid-2 > li:nth-of-type(2n+1) {
+      clear: both; }
+
+  .xlarge-block-grid-3 > li { 
+    width: 33.33333%;
+    list-style: none; }
+    .xlarge-block-grid-3 > li:nth-of-type(n) {
+      clear: none; }
+    .xlarge-block-grid-3 > li:nth-of-type(3n+1) {
+      clear: both; }
+
+  .xlarge-block-grid-4 > li {
+    width: 25%;
+    list-style: none; }
+    .xlarge-block-grid-4 > li:nth-of-type(n) {
+      clear: none; }
+    .xlarge-block-grid-4 > li:nth-of-type(4n+1) {
+      clear: both; }
+
+  .xlarge-block-grid-5 > li {
+    width: 20%;
+    list-style: none; }
+    .xlarge-block-grid-5 > li:nth-of-type(n) {
+      clear: none; }
+    .xlarge-block-grid-5 > li:nth-of-type(5n+1) {
+      clear: both; }
+
+  .xlarge-block-grid-6 > li {
+    width: 16.66667%;
+    list-style: none; }
+    .xlarge-block-grid-6 > li:nth-of-type(n) {
+      clear: none; }
+    .xlarge-block-grid-6 > li:nth-of-type(6n+1) {
+      clear: both; }
+
+  .xlarge-block-grid-7 > li {
+    width: 14.28571%;
+    list-style: none; }
+    .xlarge-block-grid-7 > li:nth-of-type(n) {
+      clear: none; }
+    .xlarge-block-grid-7 > li:nth-of-type(7n+1) {
+      clear: both; }
+
+  .xlarge-block-grid-8 > li {
+    width: 12.5%;
+    list-style: none; }
+    .xlarge-block-grid-8 > li:nth-of-type(n) {
+      clear: none; }
+    .xlarge-block-grid-8 > li:nth-of-type(8n+1) {
+      clear: both; }
+
+  .xlarge-block-grid-9 > li {
+    width: 11.11111%;
+    list-style: none; }
+    .xlarge-block-grid-9 > li:nth-of-type(n) {
+      clear: none; }
+    .xlarge-block-grid-9 > li:nth-of-type(9n+1) {
+      clear: both; }
+
+  .xlarge-block-grid-10 > li {
+    width: 10%;
+    list-style: none; }
+    .xlarge-block-grid-10 > li:nth-of-type(n) {
+      clear: none; }
+    .xlarge-block-grid-10 > li:nth-of-type(10n+1) {
+      clear: both; }
+
+  .xlarge-block-grid-11 > li {
+    width: 9.09091%;
+    list-style: none; }
+    .xlarge-block-grid-11 > li:nth-of-type(n) {
+      clear: none; }
+    .xlarge-block-grid-11 > li:nth-of-type(11n+1) {
+      clear: both; }
+
+  .xlarge-block-grid-12 > li {
+    width: 8.33333%;
+    list-style: none; }
+    .xlarge-block-grid-12 > li:nth-of-type(n) {
+      clear: none; }
+    .xlarge-block-grid-12 > li:nth-of-type(12n+1) {
+      clear: both; } 
+@media only screen and (min-width: 120.063em) {
+  .xxlarge-block-grid-1 > li {
+    width: 100%;
+    list-style: none; }
+    .xxlarge-block-grid-1 > li:nth-of-type(n) {
+      clear: none; }
+    .xxlarge-block-grid-1 > li:nth-of-type(1n+1) {
+      clear: both; }
+
+  .xxlarge-block-grid-2 > li {
+    width: 50%;
+    list-style: none; }
+    .xxlarge-block-grid-2 > li:nth-of-type(n) {
+      clear: none; }
+    .xxlarge-block-grid-2 > li:nth-of-type(2n+1) {
+      clear: both; }
+
+  .xxlarge-block-grid-3 > li {
+    width: 33.33333%;
+    list-style: none; }
+    .xxlarge-block-grid-3 > li:nth-of-type(n) {
+      clear: none; }
+    .xxlarge-block-grid-3 > li:nth-of-type(3n+1) {
+      clear: both; }
+
+  .xxlarge-block-grid-4 > li {
+    width: 25%;
+    list-style: none; }
+    .xxlarge-block-grid-4 > li:nth-of-type(n) {
+      clear: none; }
+    .xxlarge-block-grid-4 > li:nth-of-type(4n+1) {
+      clear: both; }
+
+  .xxlarge-block-grid-5 > li {
+    width: 20%;
+    list-style: none; }
+    .xxlarge-block-grid-5 > li:nth-of-type(n) {
+      clear: none; }
+    .xxlarge-block-grid-5 > li:nth-of-type(5n+1) {
+      clear: both; }
+
+  .xxlarge-block-grid-6 > li {
+    width: 16.66667%;
+    list-style: none; }
+    .xxlarge-block-grid-6 > li:nth-of-type(n) {
+      clear: none; }
+    .xxlarge-block-grid-6 > li:nth-of-type(6n+1) {
+      clear: both; }
+
+  .xxlarge-block-grid-7 > li {
+    width: 14.28571%;
+    list-style: none; }
+    .xxlarge-block-grid-7 > li:nth-of-type(n) {
+      clear: none; }
+    .xxlarge-block-grid-7 > li:nth-of-type(7n+1) {
+      clear: both; }
+
+  .xxlarge-block-grid-8 > li {
+    width: 12.5%;
+    list-style: none; }
+    .xxlarge-block-grid-8 > li:nth-of-type(n) {
+      clear: none; }
+    .xxlarge-block-grid-8 > li:nth-of-type(8n+1) {
+      clear: both; }
+
+  .xxlarge-block-grid-9 > li {
+    width: 11.11111%;
+    list-style: none; }
+    .xxlarge-block-grid-9 > li:nth-of-type(n) {
+      clear: none; }
+    .xxlarge-block-grid-9 > li:nth-of-type(9n+1) {
+      clear: both; }
+
+  .xxlarge-block-grid-10 > li {
+    width: 10%;
+    list-style: none; }
+    .xxlarge-block-grid-10 > li:nth-of-type(n) {
+      clear: none; }
+    .xxlarge-block-grid-10 > li:nth-of-type(10n+1) {
+      clear: both; }
+
+  .xxlarge-block-grid-11 > li {
+    width: 9.09091%;
+    list-style: none; }
+    .xxlarge-block-grid-11 > li:nth-of-type(n) {
+      clear: none; }
+    .xxlarge-block-grid-11 > li:nth-of-type(11n+1) {
+      clear: both; }
+
+  .xxlarge-block-grid-12 > li {
+    width: 8.33333%;
+    list-style: none; }
+    .xxlarge-block-grid-12 > li:nth-of-type(n) {
+      clear: none; }
+    .xxlarge-block-grid-12 > li:nth-of-type(12n+1) {
+      clear: both; } }
+
+.xlarge-2 {
+   @media #{$xlarge-up} {
+      width:50%;
+   }
+}

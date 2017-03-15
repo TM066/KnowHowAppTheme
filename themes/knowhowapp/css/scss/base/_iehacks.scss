@@ -1,0 +1,15 @@
+ @import 'base/_config'; 
+ 
+ @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none)/*works in IE10+*/ {  
+
+
+.footIcon {
+    margin: -1em 0 0.1em 0.6em;
+    width: 6em;
+}
+
+nav.tab-bar {
+    height: 9em;
+}
+       
+} 

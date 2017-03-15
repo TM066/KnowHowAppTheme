@@ -1,0 +1,163 @@
+/* =======================================================================================================================================================================
+   Imports
+   ===================================================================================================================================================================== */
+
+@import 'base/_config'; 
+
+/* ========================================================================================================================================================================
+   Ipad Portrait
+   ===================================================================================================================================================================== */
+
+@media only screen and (min-width: 40.063em) and (max-width: 64em)/* min-width 641px and max-width 1024px, use when QAing tablet-only issues */
+ { 
+ 
+/* ================================[ Masonry ]====================================*/
+.masonry-item{background:#fff none repeat scroll 0 0;border-radius:15px;margin:.4%;padding:0;width:49%}
+/* =============================================================================*/
+
+/* ================================[ Profile]====================================*/
+.row.reg{margin-top:12em;margin-bottom:7em}
+.views-field.views-field-title{font-size:1.4em}
+p{font-size:1em}
+.views-field.views-field-title{padding:.6em .6em .2em 0}
+/* ===========================================================================*/
+
+/* ================================[ Nav ]====================================*/
+.tab-bar{margin-top:0}
+nav.tab-bar{top:0}
+.footIcon.logout img{width:6em}
+/* ============================================================================*/
+
+/* ================================[ Profile ]====================================*/
+.pointsDiv{width:48%}
+.row.bio{margin-top:1.5em}
+.artIcon.profileEdit.right{margin-left:.3em;margin-right:.8em;margin-top:-.1em}
+/* ==================================================================================*/
+
+/* ================================[ Following ]====================================*/ 
+
+.cards.following .views-field.views-field-field-userfirstname {
+    font-weight: bold;
+    margin: 0 0 0 -6.5em;
+    font-size: 0.9em;
+}
+.cards.following .views-field.views-field-field-userjobtitle{
+  margin:-0 0 0 -6.5em;
+      font-size: 0.9em;
+} 
+.view-user-following {
+    margin-top: 2em;
+}
+/* ==================================================================================*/
+
+/* ================================[ Followers ]====================================*/ 
+
+.cards.followers .views-field.views-field-field-userfirstname {
+    font-weight: bold;
+    margin: -0.6em 0 0 -5em;
+    font-size: 0.9em;
+}
+.cards.followers .views-field.views-field-field-userjobtitle{
+  margin: 0 0 0 -5em;
+      font-size: 0.9em;
+} 
+.view-user-followers {
+    margin-top: 2em;
+}
+/* ==================================================================================*/
+
+
+
+/* ================================[ Error Page ]====================================*/
+.messageTem{margin-top:6em}
+/* ==================================================================================*/
+
+/* ================================[ Team ]====================================*/
+.view-teams-teammembers .masonry-item{width:49%!important;height:16em}
+.view-teams-subteams .masonry-item{width:49%!important}
+.view-teams-subteams .views-field.views-field-title{color:#333;font-size:1.5em;font-weight:700;line-height:1em;padding:.5em}
+.view-teams-teamleaders .views-field.views-field-field-userprofileimg img{height:7em;width:7em;margin:0 0 1em}
+.view-teams-teamleaders .views-field.views-field-field-userbanner img{border-top-left-radius:12px;border-top-right-radius:12px;height:98px;width:100%}
+.field-name-field-teambanner .field-item img{height:14em;object-fit:cover;border-top-right-radius:12px;border-top-left-radius:12px}
+.view-content.masonry-processed .teamleaderstop{float:left;position:relative!important;width:49%}
+/* ==================================================================================*/
+
+/* ================================[ Article Flags ]====================================*/
+.flag-wrapper.flag-bookmarks a.unflag-action{background:rgba(0,0,0,0) url(/sites/all/themes/knowhowapp/images/App_Icons/collect_active.svg) no-repeat scroll 0 0 / 63px auto;color:transparent;display:block;height:3em;text-indent:-9999em;width:3em;margin-top:6px}
+.flag-wrapper.flag-bookmarks a.unflag-action:hover{background:rgba(0,0,0,0) url(/sites/all/themes/knowhowapp/images/App_Icons/collect_active_hover.svg) no-repeat scroll 0 0 / 63px auto;color:transparent;display:block;height:3em;text-indent:-9999em;width:3em;margin-top:6px}
+.flag-wrapper.flag-bookmarks a.flag-action{background:rgba(0,0,0,0) url(/sites/all/themes/knowhowapp/images/App_Icons/collect.svg) no-repeat scroll 0 0 / 63px auto;color:transparent;display:block;height:3em;text-indent:-9999em;width:3em;margin-top:6px}
+.flag-wrapper.flag-bookmarks a.flag-action:hover{background:rgba(0,0,0,0) url(/sites/all/themes/knowhowapp/images/App_Icons/collect_hover.svg) no-repeat scroll 0 0 / 63px auto;color:transparent;display:block;height:3em;text-indent:-9999em;width:3em;margin-top:6px}
+/* ===============================================================================*/ 
+
+/* ================================[ BOOKMARKS ]====================================*/ 
+.cards.bookmarks .masonry-item{background:#fff none repeat scroll 0 0;border-radius:15px;margin:.4%;padding:0;width:32%}
+.title.bookmark{font-size:.86em;line-height:1em;margin:0.5em -0.4em 0.5em 0.3em}
+/* ===============================================================================*/ 
+
+/* ================================[ IE HACKS START ]====================================*/ 
+
+  @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none)/*works in IE10+*/ {  
+
+.footIcon{margin:-1em 0 .1em .6em;width:6em}
+.logout.footIcon img{width:6em;margin-top:2.6em}
+nav.tab-bar{height:9em}
+.view-teams-teammembers .masonry-item{height:18em}
+.view-teams-teamleaders .views-field-field-userbanner.views-field img{height:7em}
+.view-teams-teamleaders .views-field-field-userprofileimg.views-field img{margin:-6em 0 1em}
+/* ===============================================================================*/ 
+} 
+}
+
+/* ========================================================================================================================================================================
+   Ipad landscape
+   ===================================================================================================================================================================== */
+
+@media only screen and (min-width: 40.063em) and (orientation:landscape) {
+
+/* ================================[ Nav ]====================================*/
+nav.tab-bar{top:0}
+.footIcon.logout img{width:6em}
+/* ===========================================================================*/
+
+/* ================================[ Article ]====================================*/
+.pointsDiv{width:23%}
+.row.bio{margin-top:1.3em}
+.artIcon.profileEdit.right{margin-left:-1em;margin-top:-.1em}
+.row.reg{margin-top:12em;margin-bottom:7em}
+.views-field-counter.views-field,.field-name-love.field,.views-field-created.views-field,.field.field-name-comments{
+    font-size: 1.1em;
+}
+/* ==============================================================================*/
+
+/* ================================[ Team Leaders ]====================================*/
+
+.view-content.masonry-processed .teamleaderstop{float:left;position:relative!important;width:49%}
+.view-teams-teamleaders .views-field.views-field-field-userbanner img{border-top-left-radius:12px;border-top-right-radius:12px;height:98px;width:100%}
+/* ===========================================================================*/
+
+/* ================================[ Article Flags ]====================================*/
+
+.flag-wrapper.flag-bookmarks a.unflag-action{background:rgba(0,0,0,0) url(/sites/all/themes/knowhowapp/images/App_Icons/collect_active.svg) no-repeat scroll 0 0 / 63px auto;color:transparent;display:block;height:3em;text-indent:-9999em;width:3em;margin-top:6px}
+.flag-wrapper.flag-bookmarks a.unflag-action:hover{background:rgba(0,0,0,0) url(/sites/all/themes/knowhowapp/images/App_Icons/collect_active_hover.svg) no-repeat scroll 0 0 / 63px auto;color:transparent;display:block;height:3em;text-indent:-9999em;width:3em;margin-top:6px}
+.flag-wrapper.flag-bookmarks a.flag-action{background:rgba(0,0,0,0) url(/sites/all/themes/knowhowapp/images/App_Icons/collect.svg) no-repeat scroll 0 0 / 63px auto;color:transparent;display:block;height:3em;text-indent:-9999em;width:3em;margin-top:6px}
+.flag-wrapper.flag-bookmarks a.flag-action:hover{background:rgba(0,0,0,0) url(/sites/all/themes/knowhowapp/images/App_Icons/collect_hover.svg) no-repeat scroll 0 0 / 63px auto;color:transparent;display:block;height:3em;text-indent:-9999em;width:3em;margin-top:6px}
+/* ================================================================================*/
+
+/* ================================[ BOOKMARKS ]====================================*/ 
+.cards.bookmarks .masonry-item{background:#fff none repeat scroll 0 0;border-radius:15px;margin:.4%;padding:0;width:32%}
+/* ================================================================================*/
+
+/* ================================[ IE HACKS START ]====================================*/ 
+
+  @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none)/*works in IE10+*/ {  
+
+
+.view-teams-teamleaders .views-field-field-userbanner.views-field img{height:7em}
+.view-teams-teamleaders .views-field-field-userprofileimg.views-field img{margin:-5em 0 1em}
+.footIcon{margin:-1em 0 .1em .6em;width:6em}
+.logout.footIcon img{width:6em;margin-top:2.6em}
+nav.tab-bar{height:9em}
+.middle.tab-bar-section {top: -2em;}
+/* ================================[ IE HACKS FINISH ]====================================*/ 
+}
+}

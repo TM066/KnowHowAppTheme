@@ -1,0 +1,16 @@
+name = SearchAPI View Modes
+description = Index multiple view mode renderings of indexed entities, returned as HTML from your search backend.
+core = 7.x
+package = Search
+
+dependencies[] = search_api
+
+files[] = search_api_view_modes.test
+files[] = includes/index_view_modes.inc
+files[] = views/search_api_view_modes_handler_field_text.inc
+; Information added by Drupal.org packaging script on 2016-05-20
+version = "7.x-1.2"
+core = "7.x"
+project = "search_api_view_modes"
+datestamp = "1463769253"
+
