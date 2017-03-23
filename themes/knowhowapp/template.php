@@ -9,6 +9,26 @@ function knowhowapp_html_head_alter(&$head_elements) {
   );
 }
 
+function knowhowapp_alpha_preprocess_node(&$vars) {
+      if(isset($vars['field_media'][0]['uri']))
+      {
+        $uri = $vars['field_media'][0]['uri'];
+        $url = file_create_url($uri);
+        $page_keywords = array(
+                         '#type' => 'html_tag',
+                         '#tag' => 'meta',
+                         '#attributes' => array(
+                          'property' => 'og:image',
+                          'content' => $url,
+                            )
+                      );
+       drupal_add_html_head($page_keywords, 'page_keywords');
+     }
+   }
+
+
+
+
 /**
  * Override or insert variables into the page template for HTML output.
  */
@@ -53,6 +73,15 @@ function knowhowapp_process_page(&$variables) {
 }
 
 function knowhowapp_page_alter($page) {
+  $meta_ie_render_engine = array(
+      '#type' => 'html_tag',
+      '#tag' => 'meta',
+      '#attributes' => array(
+        'http-equiv' => 'X-UA-Compatible',
+        'content' =>  'IE=edge,chrome=1',
+      ),
+      '#weight' => '-99999'
+    );
 
 		$mobileoptimized = array(
 			'#type' => 'html_tag',
@@ -81,6 +110,7 @@ function knowhowapp_page_alter($page) {
 			)
 		);
 
+    drupal_add_html_head($meta_ie_render_engine, 'meta_ie_render_engine');
 		drupal_add_html_head($mobileoptimized, 'MobileOptimized');
 		drupal_add_html_head($handheldfriendly, 'HandheldFriendly');
 		drupal_add_html_head($viewport, 'viewport');
@@ -94,7 +124,7 @@ function knowhowapp_breadcrumb($variables) {
     $output = '<h2 class="element-invisible">' . t('You are here') . '</h2>';
     // comment below line to hide current page to breadcrumb
 	$breadcrumb[] = drupal_get_title();
-    $output .= '<div class="breadcrumb">' . implode('<span class="sep">»</span>', $breadcrumb) . '</div>';
+    $output .= '<div class="breadcrumb">' . implode('<span class="sep">Â»</span>', $breadcrumb) . '</div>';
     return $output;
   }
 }
@@ -147,6 +177,5 @@ function knowhowapp_preprocess_page(&$variables) {
   if ($node = menu_get_object()) {
     $variables['node'] = $node;
   }
-  
-}
 
+}
